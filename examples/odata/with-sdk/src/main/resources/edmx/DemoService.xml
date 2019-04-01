@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" Version="1.0">
+    <edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="3.0" m:MaxDataServiceVersion="3.0">
+        <Schema Namespace="demo" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityType Name="Car">
+                <Key>
+                    <PropertyRef Name="id" />
+                </Key>
+                <Property Name="id" Type="Edm.Int32" />
+                <Property Name="model" Type="Edm.String" />
+            </EntityType>
+            <EntityContainer Name="container" m:IsDefaultEntityContainer="true">
+                <EntitySet Name="Cars" EntityType="demo.Car" />
+            </EntityContainer>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
