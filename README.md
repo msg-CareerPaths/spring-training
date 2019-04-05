@@ -76,6 +76,6 @@ Throughout the application, we assume that prices are always in EUR and weights 
 
 ### OPT-7. Web Reactive
 
-### OPT-8. SMTP
+### OPT-8. Java Mail
 
 ### OPT-9. Cloud
