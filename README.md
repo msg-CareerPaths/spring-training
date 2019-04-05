@@ -48,7 +48,27 @@ Throughout the application, we assume that prices are always in EUR and weights 
 
 ## Chapters
 
+### 0. Java, Git, Maven
+
+Required Reading:
+
+ - [Git Basics](https://git-scm.com/book/en/v1/Getting-Started-Git-Basics)
+ - [Maven Intro](https://maven.apache.org/what-is-maven.html)
+ - [Java 8](https://www.tutorialspoint.com/java8/index.htm)
+ - [EditorConfig](https://editorconfig.org/)
+
+Further Reading:
+
+ - [GitHub - Hello World](https://guides.github.com/activities/hello-world/)
+ - [Git - CLI Fundamentals](https://www.youtube.com/watch?v=HVsySz-h9r4)
+ - [Maven in 5 minutes](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)
+
 ### 1. Spring Basics
+
+**Required reading**
+
+ - []()
+
 
 ### 2. Spring Boot
 
