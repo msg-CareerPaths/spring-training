@@ -82,6 +82,7 @@ Further Resources:
  - [GitHub - Hello World](https://guides.github.com/activities/hello-world/)
  - [Git - CLI Fundamentals](https://www.youtube.com/watch?v=HVsySz-h9r4)
  - [Maven in 5 minutes](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)
+ - [Guide to Java Reflection](https://www.baeldung.com/java-reflection)
 
 ### 1. Spring Basics
 
@@ -116,7 +117,6 @@ Required Reading:
 
 Online Shop:
  
- >
  > Register an account on GitHub and accept the training [GitHub Classroom Assignment](https://classroom.github.com/a/nnCheGru). This will create a new GitHub repository for you. Clone this repository locally and checkout the `develop` branch. During the course of the training, you will commit and push your work on this branch.
  >
  > Go to "Spring Initializr" and generate a new project:
