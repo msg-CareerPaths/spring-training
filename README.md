@@ -50,6 +50,8 @@ Throughout the application, we assume that prices are always in EUR and weights 
 
 ### 0. Java, Git, Maven
 
+Goal: Getting familiar with the ecosystem around Spring. You can skip this chapter if you have already worked with Java, Git and Maven before.
+
 Required Reading:
 
  - [Git Basics](https://git-scm.com/book/en/v1/Getting-Started-Git-Basics)
@@ -57,7 +59,9 @@ Required Reading:
  - [Java 8](https://www.tutorialspoint.com/java8/index.htm)
  - [EditorConfig](https://editorconfig.org/)
 
-Further Reading:
+Online Shop: *nothing to do*.
+
+Further Resources:
 
  - [GitHub - Hello World](https://guides.github.com/activities/hello-world/)
  - [Git - CLI Fundamentals](https://www.youtube.com/watch?v=HVsySz-h9r4)
@@ -65,12 +69,52 @@ Further Reading:
 
 ### 1. Spring Basics
 
-**Required reading**
+Goal: Understand dependency injection and how it is realized with Spring.
 
- - []()
+Required Reading:
 
+ - [What is Dependency Injection?](https://stackoverflow.com/a/130862/7612556)
+ - [Spring - Core Annotations](https://www.baeldung.com/spring-core-annotations)
+ - [Spring - Bean Annotations](https://www.baeldung.com/spring-bean-annotations)
+ - [Spring - Constructor Injection](https://www.baeldung.com/constructor-injection-in-spring)
+
+Online Shop: *nothing to do*.
+
+Further Resources:
+
+ - [Spring in Action](https://1drv.ms/b/s!AiBPL7npTofshY5PJim4M5RiiOyu7w) - Part 1, Chapter 1
+ - [What is Spring all about?](https://www.youtube.com/watch?v=gq4S-ovWVlM)
+ - [Spring Reference - Overview](https://docs.spring.io/spring/docs/5.1.6.RELEASE/spring-framework-reference/overview.html#overview)
+ - [Spring Reference - Core](https://docs.spring.io/spring/docs/5.1.6.RELEASE/spring-framework-reference/core.html#spring-core) - Chapters 1 to 4
 
 ### 2. Spring Boot
+
+Goal: Generate a new project and be able to use the out-of-the-box Spring Boot features.
+
+Required Reading:
+
+ - [Building an Application with Spring Boot](https://spring.io/guides/gs/spring-boot/)
+ - [Configuration Properties](https://www.baeldung.com/configuration-properties-in-spring-boot)
+ - [Introduction to Lombok](https://www.baeldung.com/intro-to-project-lombok)
+ - [Introduction to SLF4J](https://www.baeldung.com/slf4j-with-log4j2-logback)
+
+Online Shop:
+
+ > Go to „Spring Initializr“ and generate a new project:
+ > - Group: `ro.msg.learning`
+ > - Artifact: `shop`
+ > - Dependencies: `Web`, `Security`, `JPA`, `JDBC`, `H2`
+ >
+ > Import this project into your IDE (you can delete the `mvnw`, `mvnw.cmd` and `.mvn` files / folders as you have maven in the IDE anyway).
+ >
+ > Enable the H2 console for your application (see [this link](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-sql.html#boot-features-sql-h2-console)) and configure H2 to use a file-based storage somewhere on your computer (see [this answer](https://stackoverflow.com/questions/37903105/how-to-configure-spring-boot-to-use-file-based-h2-database/37969181#37969181)).
+ >
+ > Initialize a local Git repository in the project folder, create a new `develop` branch and commit the project files to this branch. Accept the [GitHub Classroom Assignment](https://classroom.github.com/a/nnCheGru). This will create a new GitHub repository for you. Add this new repository as a remote to your local repository and push your new branch and commit.
+
+Further Resources:
+ - [Spring Boot Reference](https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/html/index.html) - Parts I and II
+ - [Spring Boot Tomcat Sample](https://github.com/spring-projects/spring-boot/tree/master/spring-boot-samples/spring-boot-sample-tomcat)
+ - [Common Application Properties](https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/html/common-application-properties.html)
 
 ### 3. JPA and Flyway
 
