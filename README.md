@@ -107,7 +107,7 @@ Online Shop:
  >
  > Import this project into your IDE (you can delete the `mvnw`, `mvnw.cmd` and `.mvn` files / folders as you have maven in the IDE anyway).
  >
- > Enable the [H2 console for your application](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-sql.html#boot-features-sql-h2-console) and configure H2 to use a [file-based storage somewhere on your computer](https://stackoverflow.com/questions/37903105/how-to-configure-spring-boot-to-use-file-based-h2-database/37969181#37969181).
+ > Enable the [H2 console for your application](https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/html/boot-features-sql.html#boot-features-sql-h2-console) and configure H2 to use a [file-based storage somewhere on your computer](https://stackoverflow.com/questions/37903105/how-to-configure-spring-boot-to-use-file-based-h2-database/37969181#37969181).
  >
  > Initialize a local Git repository in the project folder, create a new `develop` branch and commit the project files to this branch. Accept the [GitHub Classroom Assignment](https://classroom.github.com/a/nnCheGru). This will create a new GitHub repository for you. Add this new repository as a remote to your local repository and push your new branch and commit.
 
@@ -137,27 +137,90 @@ Online Shop:
 
 Further Resources:
  - [Spring Data Reference](https://docs.spring.io/spring-data/jpa/docs/2.1.6.RELEASE/reference/html/)
- - [Spring Database Initialization](https://docs.spring.io/spring-boot/docs/current/reference/html/howto-database-initialization.html#howto-execute-flyway-database-migrations-on-startup)
+ - [Spring Database Initialization](https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/html/howto-database-initialization.html#howto-execute-flyway-database-migrations-on-startup)
 
-### 4. Spring MVC
+### 4. JSON REST APIs
 
 Goal: Group business logic into service classes and expose this logic through REST interfaces.
 
-### 5. Testing
+Required Reading:
+
+ - [What is REST?](https://medium.com/extend/what-is-rest-a-simple-explanation-for-beginners-part-1-introduction-b4a072f8740f) - Parts 1 and 2
+ - [Spring REST Tutorial](https://spring.io/guides/tutorials/rest/)
+ - [Spring Service Components](https://www.tutorialspoint.com/spring_boot/spring_boot_service_components.htm)
+ - [Strategy Design Pattern](https://en.wikipedia.org/wiki/Strategy_pattern)
+
+Online Shop:
+
+ > Create a service class that handles the creation of orders. The following constraints apply:
+ >
+ > - You get a single java object as input. This object will contain the order timestamp, the delivery address and a list of products (product ID and quantity) contained in the order.
+ > - You return an Order entity if the operation was successful. If not, you throw an exception.
+ > - The service has to select a strategy for finding from which locations should the products be taken. See the strategy design pattern. The strategy should be selected based on a `@Configuration`. The following initial strategies should be created: 
+ >   - **Single location** - find a single location that has all the required products (with the required quantities) in stock. If there are more such locations, simply take the first one based on the ID.
+ >   - **Most abundant** - take each product from the location which has the largest stock for that particular product.
+ > - The service then runs the strategy, obtaining a list of objects with the following structure: location, product, quantity (= how many items of the given product are taken from the given location). If the strategy is unable to find a suitable set of locations, it should throw an exception.
+ > - The stocks are be updated by subtracting the shipped goods. 
+ > - Afterwards the order is persisted in the database and returned.
+ > 
+ > Create a Rest Controller for the "Create order" operation, which should have a POST mapping accepting a JSON request body and producing a JSON response body.
+ 
+Further Resources:
+
+ - [DDD and Spring](http://static.olivergierke.de/lectures/ddd-and-spring/)
+ - [Transaction Management](https://docs.spring.io/spring/docs/5.1.6.RELEASE/spring-framework-reference/data-access.html#transaction)
+ - [ConditionalOnProperty](https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/api/org/springframework/boot/autoconfigure/condition/ConditionalOnProperty.html)
+
+
+### 5. CSV Support
+
+Goal: Add support for a custom data format (CSV) for response bodies.
+
+Required Reading:
+
+ - [Customizing Response Rendering](https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/html/howto-spring-mvc.html#howto-customize-the-responsebody-rendering)
+ - [CSV with Jackson](http://www.cowtowncoder.com/blog/archives/2012/03/entry_468.html)
+
+Online Shop:
+
+ > Create a service class that handles the export of stocks. It has one method for exporting the stock of a given location (input = location ID, output = list of stocks).
+ >
+ > Create a message converter for CSV handling, using the [Jackson CSV library](https://github.com/FasterXML/jackson-dataformats-text/tree/master/csv). First create a utility class that has the following methods and then wrap it into a subclass of `AbstractGenericHttpMessageConverter`:
+ >
+ > - `fromCsv`:
+ >   - Has a generic type parameter `<T>`, representing the type of the POJOs stored in the CSV,
+ >   - Returns a `List<T>`,
+ >   - Has a parameter `Class<T>`,
+ >   - Has an input stream parameter containing the CSV file.
+ > - `toCsv`:
+ >   - Has a generic type parameter `<T>`, representing type of the POJOs stored in the CSV,
+ >   - Returns `void`,
+ >   - Has a parameter `Class<T>`,
+ >   - Has a parameter `List<T>`, representing the list of POJOs to be written in the CSV,
+ >   - Has an output stream parameter in which the CSV file is written.
+ >
+ > Create a Rest Controller for the "Export stock" operation with a GET mapping producing a CSV response.
+
+Further Resources:
+
+ - [Jackson CSV library](https://github.com/FasterXML/jackson-dataformats-text/tree/master/csv)
+ - [HTTP Message Converters](https://www.baeldung.com/spring-httpmessageconverter-rest)
+
+### 6. Testing
 
 Goal: Perform tests of the following types: unit tests, integration tests and API tests.
 
-### 6. Security
+### 7. Security
 
 Goal: Secure your application with HTTP Basic Authentication.
 
-### 7. REST Template
+### 8. REST Template
 
 Goal: Consume an external API using REST Templates.
 
 https://developer.mapquest.com/documentation/directions-api/route-matrix/post/
 
-### 8. Task Scheduler
+### 9. Task Scheduler
 
 Goal: Schedule a simple task to run periodically.
 
