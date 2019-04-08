@@ -122,9 +122,9 @@ Online Shop:
  > Go to "Spring Initializr" and generate a new project:
  > - Group: `ro.msg.learning`,
  > - Artifact: `shop`,
- > - Dependencies: `Web`, `Security`, `JPA`, `JDBC`, `H2`, `Lombok`.
+ > - Dependencies: `Web`, `Security`, `JPA`, `Flyway`, `H2`, `Lombok`.
  >
- > Extract the generated `zip` file into the previously cloned repository. Import this project into your IDE (you can delete the `mvnw`, `mvnw.cmd` and `.mvn` files / folders as you have Maven in the IDE anyway).
+ > Extract the generated `zip` file into the previously cloned repository. Import this project into your IDE. You can delete the `mvnw`, `mvnw.cmd` and `.mvn` files / folders as you have Maven in the IDE anyway.
  >
  > Enable the [H2 console for your application](https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/html/boot-features-sql.html#boot-features-sql-h2-console) and configure H2 to use a [file-based storage somewhere on your computer](https://stackoverflow.com/questions/37903105/how-to-configure-spring-boot-to-use-file-based-h2-database/37969181#37969181).
 
@@ -149,7 +149,7 @@ Online Shop:
  
  > Create a data model for your application in a Flyway SQL migration. You can refine the model by adding unique indexes (e.g. supplier name) and introducing artificial PKs instead of composite ones and also add a unique index.
  >
- > Translate this data model into Java entity classes. Use Lombok to annotate these classes with @Data annotations to generate getters, setters, equals and hashCode. Hint: *it might be useful to create a base entity class (containing just the primary key) or an interface (containing the primary key getter and setter) to be able to handle entities generically later on.*
+ > Translate this data model into Java entity classes. Use Lombok to annotate these classes with `@Data` annotations to generate getters, setters, equals and hashCode. Hint: *it might be useful to create a base entity class (containing just the primary key) or an interface (containing the primary key getter and setter) to be able to handle entities generically later on.*
  > 
  > Annotate all the entities with the proper JPA annotations (`@Entity`, `@OneToMany`, etc). Write Spring Data JPA repositories to allow easy access to your entities. 
 
@@ -175,7 +175,7 @@ Online Shop:
  >
  > - You get a single java object as input. This object will contain the order timestamp, the delivery address and a list of products (product ID and quantity) contained in the order.
  > - You return an Order entity if the operation was successful. If not, you throw an exception.
- > - The service has to select a strategy for finding from which locations should the products be taken. See the strategy design pattern. The strategy should be selected based on a `@Configuration`. The following initial strategies should be created: 
+ > - The service has to select a strategy for finding from which locations should the products be taken. The strategy should be selected based on a `@Configuration`. The following initial strategies should be created: 
  >   - **Single location** - find a single location that has all the required products (with the required quantities) in stock. If there are more such locations, simply take the first one based on the ID.
  >   - **Most abundant** - take each product from the location which has the largest stock for that particular product.
  > - The service then runs the strategy, obtaining a list of objects with the following structure: location, product, quantity (= how many items of the given product are taken from the given location). If the strategy is unable to find a suitable set of locations, it should throw an exception.
@@ -321,7 +321,7 @@ Required Reading:
 
 Online Shop:
 
- > The owner of the Online Shop wants to see a sales report every morning for the day before. TO cater for this requirement, create a periodical job that runs at the end of each day. It should aggregate all the sales revenues for each location for that given day and store the result into the *Revenue* database table. 
+ > The owner of the Online Shop wants to see a sales report every morning for the day before. To cater for this requirement, create a periodical job that runs at the end of each day. It should aggregate all the sales revenues for each location for that day and store the result into the *Revenue* database table. 
  >
  > Create a `@RestController` with a `GET` mapping for exporting the revenue data for a given date.
 
