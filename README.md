@@ -101,13 +101,13 @@ Required Reading:
 Online Shop:
 
  > Go to „Spring Initializr“ and generate a new project:
- > - Group: `ro.msg.learning`
- > - Artifact: `shop`
- > - Dependencies: `Web`, `Security`, `JPA`, `JDBC`, `H2`
+ > - Group: `ro.msg.learning`,
+ > - Artifact: `shop`,
+ > - Dependencies: `Web`, `Security`, `JPA`, `JDBC`, `H2`, `Lombok`.
  >
  > Import this project into your IDE (you can delete the `mvnw`, `mvnw.cmd` and `.mvn` files / folders as you have maven in the IDE anyway).
  >
- > Enable the H2 console for your application (see [this link](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-sql.html#boot-features-sql-h2-console)) and configure H2 to use a file-based storage somewhere on your computer (see [this answer](https://stackoverflow.com/questions/37903105/how-to-configure-spring-boot-to-use-file-based-h2-database/37969181#37969181)).
+ > Enable the [H2 console for your application](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-sql.html#boot-features-sql-h2-console) and configure H2 to use a [file-based storage somewhere on your computer](https://stackoverflow.com/questions/37903105/how-to-configure-spring-boot-to-use-file-based-h2-database/37969181#37969181).
  >
  > Initialize a local Git repository in the project folder, create a new `develop` branch and commit the project files to this branch. Accept the [GitHub Classroom Assignment](https://classroom.github.com/a/nnCheGru). This will create a new GitHub repository for you. Add this new repository as a remote to your local repository and push your new branch and commit.
 
@@ -118,13 +118,48 @@ Further Resources:
 
 ### 3. JPA and Flyway
 
+Goal: Initialize the database schema and map the tables to Java classes using JPA.
+
+Required Reading:
+
+ - [Database migrations with Flyway](https://www.baeldung.com/database-migrations-with-flyway)
+ - [JPA - Entities](https://docs.oracle.com/javaee/5/tutorial/doc/bnbqa.html)
+ - [JPA - JPQL](https://www.tutorialspoint.com/jpa/jpa_jpql.htm)
+ - [Introduction to Spring Data JPA](https://www.baeldung.com/the-persistence-layer-with-spring-data-jpa)
+
+Online Shop:
+ 
+ > Create a data model for your application in a Flyway SQL migration. You can refine the model by adding unique indexes (e.g. supplier name) and introducing artificial PKs instead of composite ones and also add a unique index.
+ >
+ > Translate this data model into Java entity classes. Use Lombok to annotate these classes with @Data annotations to generate getters, setters, equals and hashCode. Hint: *it might be useful to create a base entity class (containing just the primary key) or an interface (containing the primary key getter and setter) to be able to handle entities generically later on.*
+ > 
+ > Annotate all the entities with the proper JPA annotations (`@Entity`, `@OneToMany`, etc). Write Spring Data JPA repositories to allow easy access to your entities. 
+
+Further Resources:
+ - [Spring Data Reference](https://docs.spring.io/spring-data/jpa/docs/2.1.6.RELEASE/reference/html/)
+ - [Spring Database Initialization](https://docs.spring.io/spring-boot/docs/current/reference/html/howto-database-initialization.html#howto-execute-flyway-database-migrations-on-startup)
+
 ### 4. Spring MVC
 
-### 5. Security
+Goal: Group business logic into service classes and expose this logic through REST interfaces.
 
-### 6. REST Template
+### 5. Testing
 
-### 7. Task Scheduler
+Goal: Perform tests of the following types: unit tests, integration tests and API tests.
+
+### 6. Security
+
+Goal: Secure your application with HTTP Basic Authentication.
+
+### 7. REST Template
+
+Goal: Consume an external API using REST Templates.
+
+https://developer.mapquest.com/documentation/directions-api/route-matrix/post/
+
+### 8. Task Scheduler
+
+Goal: Schedule a simple task to run periodically.
 
 ### OPT-1. JDBC
 
