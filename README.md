@@ -332,11 +332,70 @@ Further Resources:
 
 ### OPT-1. JDBC
 
+Goal: Implement repositories manually and become familiar with JDBC.
+
+Required Reading:
+
+ - [Spring JDBC Template](https://www.baeldung.com/spring-jdbc-jdbctemplate)
+
+Online Shop:
+
+ > Write Repository implementations using JDBC for the following tables: `Product`, `ProductCategory` to replace the automatically generated Spring Data repositories.
+
+Further Resources:
+
+ - [Accessing Relational Data using JDBC with Spring](https://spring.io/guides/gs/relational-data-access/)
+ - [Spring Data Access with JDBC Reference](https://docs.spring.io/spring/docs/5.1.6.RELEASE/spring-framework-reference/data-access.html#jdbc)
+
 ### OPT-2. MongoDB
 
 ### OPT-3. OAuth
 
+Goal: Secure the online shop with OAuth 2.0.
+
+Required Reading:
+
+ - [The Simplest Guide to OAuth 2.0](https://medium.com/@darutk/the-simplest-guide-to-oauth-2-0-8c71bd9a15bb)
+ - [Authorization Server Reference](https://docs.spring.io/spring-security-oauth2-boot/docs/2.1.4.RELEASE/reference/html/boot-features-security-oauth2-authorization-server.html)
+ - [Resource Server Reference](https://docs.spring.io/spring-security-oauth2-boot/docs/current/reference/html/boot-features-security-oauth2-resource-server.html)
+ - [Spring Boot OAuth 2 Guide](https://spring.io/guides/tutorials/spring-boot-oauth2/)
+
+Online Shop:
+
+ > Configure your application as an *Authorization Server* with an in-memory store of clients. Use Postman to test that you are able to issue a token using the `password` grant.
+ >
+ > Now also configure your application as a *Resource Server* and secure your REST APIs using OAuth.
+ >
+ > Lastly, enable your application to additionally use the GitHub Authorization Server. To do this, you will first need to [register a new OAuth app on GitHub](https://developer.github.com/apps/building-oauth-apps/creating-an-oauth-app/) or contact the trainers for obtaining the credentials of an existing client.
+
+Further Resources:
+
+ - [Spring OAuth 2 Developers Guide](https://projects.spring.io/spring-security-oauth/docs/oauth2.html)
+ - [Spring SSO vs Resource Server](https://www.baeldung.com/spring-security-oauth2-enable-resource-server-vs-enable-oauth2-sso)
+
 ### OPT-4. Olingo
+
+Goal: expose a subset of the existing business logic via OData services.
+
+Required Reading:
+
+ - [Intro to OData](./documents/intro-to-odata.pdf)
+ - [Olingo OData 2](https://olingo.apache.org/doc/odata2/index.html)
+ - [OData v2 Examples](./examples/odata)
+
+Online Shop:
+
+ > Expose the following entities through a JPA-based OData service:
+ >
+ > - Order
+ > - OrderDetails
+ > - Product
+ >
+ > Use the [JPA-EDM XML mapping](https://olingo.apache.org/doc/odata2/tutorials/jparedefinemetadata.html) to exclude the unneeded JPA entities from the service, exclude any fields of type `LocalDate` or `LocalDateTime` and rename the entities and fields to conform to an UpperCamelCase naming convention.
+ >
+ > Create another separate OData service (with a separate Service Factory and separate Servlet) using the core processor. You will have to manually define a `EmdProvider` and a `ODataSingleProcessor` This service should expose the "create order" operation. 
+ > 
+ > Because for creating a new order, you must pass as an input a collection of products and quantities, you should use a *deep insert* OData operation. A deep insert is simply a regular *create* call with also passes the children entities).
 
 ### OPT-5. Thymeleaf
 
@@ -345,5 +404,25 @@ Further Resources:
 ### OPT-7. Web Reactive
 
 ### OPT-8. Java Mail
+
+Goal: Send confirmation emails to customers when orders are created.
+
+Required Reading:
+ 
+ - [Guide to Spring Mail](https://www.baeldung.com/spring-email)
+ - [Spring Expression Language](https://docs.spring.io/spring/docs/current/spring-framework-reference/core.html#expressions)
+
+Online Shop:
+
+ > Create a `@Service` class for sending email messages with both HTML and plain text bodies. The bodies and subject should be configurable via application properties, whilst the bodies should contain SpEL placeholders which should be replaced at runtime by parsing and evaluating the SpEL expressions.
+ >
+ > Register an account on [mailtrap.io](https://mailtrap.io) and use the `Default Inbox` credentials to connect to their SMTP server.
+ >
+ > Lastly, use the email service created previously to send confirmation emails to customers once an Order has been successfully created.
+
+Further Resources:
+
+ - [Sending Emails with Java](https://www.baeldung.com/java-email)
+ - [Spring Email Reference](https://docs.spring.io/spring/docs/current/spring-framework-reference/integration.html#mail)
 
 ### OPT-9. Cloud
