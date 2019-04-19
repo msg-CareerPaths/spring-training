@@ -26,7 +26,7 @@ After the learning material for a given step was sufficiently explored, either s
 
 The application will have little-to-no user interface. Developers are expected to perform developer tests with Postman once the REST APIs are implemented.
 
-All the code written must be published on GitHub. Commits must be pushed when each individual chapter is finished.
+All the code written must be published on GitHub. Commits must be pushed when each individual chapter is finished. In order to request a code review from the trainers, you must [open a pull request](https://help.github.com/en/articles/creating-a-pull-request) from the `develop` to the `master` branch.
 
 For doing static code quality checks, two separate mechanisms will be used:
  - The plugin for SonarLint and the built-in code analysis must be used to fix code issues.
@@ -170,7 +170,12 @@ Required Reading:
  - [Strategy Design Pattern](https://en.wikipedia.org/wiki/Strategy_pattern)
 
 Online Shop:
-
+ > Create a simple API for exposing the products and product categories: 
+ >
+ > - Define a DTO (data transfer object) POJO which combines the properties from a product and its respective category. 
+ > - Create a service class which uses the repositories in order to: create, update, delete, read by ID and read all the product (as DTO instances).
+ > - Build a REST Controller which uses this service.
+ >
  > Create a service class that handles the creation of orders. The following constraints apply:
  >
  > - You get a single java object as input. This object will contain the order timestamp, the delivery address and a list of products (product ID and quantity) contained in the order.
@@ -186,6 +191,7 @@ Online Shop:
  
 Further Resources:
 
+ - [RESTful API Designing Guidelines](https://hackernoon.com/restful-api-designing-guidelines-the-best-practices-60e1d954e7c9)
  - [DDD and Spring](http://static.olivergierke.de/lectures/ddd-and-spring/)
  - [Transaction Management](https://docs.spring.io/spring/docs/5.1.6.RELEASE/spring-framework-reference/data-access.html#transaction)
  - [ConditionalOnProperty](https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/api/org/springframework/boot/autoconfigure/condition/ConditionalOnProperty.html)
@@ -349,6 +355,22 @@ Further Resources:
 
 ### OPT-2. MongoDB
 
+Goal: Store unstructured data in a NoSQL database.
+
+Required Reading:
+
+ - [NoSQL Databases](https://searchdatamanagement.techtarget.com/definition/NoSQL-Not-Only-SQL)
+ - [What is MongoDB?](https://www.mongodb.com/what-is-mongodb)
+ - [Accessing Data with MongoDB](https://spring.io/guides/gs/accessing-data-mongodb/)
+
+Online Shop:
+
+ >
+
+Further Resources:
+
+ - [Spring MongoDB Reference](https://docs.spring.io/spring-data/mongodb/docs/2.1.6.RELEASE/reference/html/)
+
 ### OPT-3. OAuth
 
 Goal: Secure the online shop with OAuth 2.0.
@@ -423,9 +445,23 @@ Further Reading:
 
 ### OPT-6. RabbitMQ
 
-### OPT-7. Web Reactive
+Goal: Asynchronously communicate with a background worker application.
 
-### OPT-8. Java Mail
+Required Reading:
+
+ - [Understanding Message Brokers](https://www.3pillarglobal.com/insights/rabbitmq-understanding-message-broker)
+ - [Spring AMQP Tutorial](https://www.rabbitmq.com/tutorials/tutorial-one-spring-amqp.html)
+
+Online Shop:
+
+ >
+
+Further Resources:
+
+ - [Spring AMQP Reference](https://docs.spring.io/spring-amqp/docs/2.1.5.RELEASE/reference/)
+ - [An Introduction to Message Brokers](https://medium.com/@xaviergeerinck/an-introduction-to-message-brokers-9bd203b4ebbd)
+
+### OPT-7. Java Mail
 
 Goal: Send confirmation emails to customers when orders are created.
 
@@ -445,6 +481,23 @@ Online Shop:
 Further Resources:
 
  - [Sending Emails with Java](https://www.baeldung.com/java-email)
- - [Spring Email Reference](https://docs.spring.io/spring/docs/current/spring-framework-reference/integration.html#mail)
+ - [Spring Email Reference](https://docs.spring.io/spring/docs/5.1.6.RELEASE/spring-framework-reference/integration.html#mail)
 
-### OPT-9. Cloud
+### OPT-8. WebSocket
+
+Goal: Publish events though WebSocket to allow potential user interfaces to automatically update their displayed data.
+
+Required Reading:
+
+ - [What are WebSockets](https://pusher.com/websockets)
+ - [An Introduction to WebSocket](https://blog.teamtreehouse.com/an-introduction-to-websockets)
+ - [Using WebSocket to build an interactive web application](https://spring.io/guides/gs/messaging-stomp-websocket/)
+
+Online Shop:
+
+ >
+
+Further Resources:
+
+ - [Intro to WebSockets with Spring](https://www.baeldung.com/websockets-spring)
+ - [Spring WebSocket Reference](https://docs.spring.io/spring/docs/5.1.6.RELEASE/spring-framework-reference/web.html#websocket)
