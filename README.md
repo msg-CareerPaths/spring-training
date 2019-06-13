@@ -72,6 +72,8 @@ Further Resources:
 
 Goal: Understand dependency injection and how it is realized with Spring.
 
+[Talking note](https://team.msg.de/site/msg-RO-Insurance/training-RO/Shared%20Documents/Career%20Start/30_Technical/20_Java/Spring%20DI.mht)
+
 Suggested Reading:
 
  - [What is Dependency Injection?](https://stackoverflow.com/a/130862/7612556)
@@ -91,6 +93,8 @@ Further Resources:
 ### 2. Spring Boot
 
 Goal: Generate a new project and be able to use the out-of-the-box Spring Boot features.
+
+[Talking note](https://team.msg.de/site/msg-RO-Insurance/training-RO/Shared%20Documents/Career%20Start/30_Technical/20_Java/Spring%20Boot.mht)
 
 Suggested Reading:
 
@@ -119,6 +123,10 @@ Further Resources:
  - [Introduction to SLF4J](https://www.baeldung.com/slf4j-with-log4j2-logback)
 
 ### 3. JPA and Flyway
+
+[Talking note Hibernate](https://team.msg.de/site/msg-RO-Insurance/training-RO/Shared%20Documents/Career%20Start/30_Technical/20_Java/Hibernate.mht)
+
+[Talking note Flyway](https://team.msg.de/site/msg-RO-Insurance/training-RO/Shared%20Documents/Career%20Start/30_Technical/20_Java/Flyway.mht)
 
 Goal: Initialize the database schema and map the tables to Java classes using JPA.
 
@@ -290,6 +298,8 @@ Further Resources:
 ### OPT-1. OAuth
 
 Goal: Secure the online shop with OAuth 2.0.
+
+[Talking Note](https://team.msg.de/site/msg-RO-Insurance/training-RO/Shared%20Documents/Career%20Start/30_Technical/20_Java/OAuth2.mht)
 
 Suggested Reading:
 
