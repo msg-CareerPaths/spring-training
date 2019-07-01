@@ -269,32 +269,44 @@ Further Resources:
  - [Spring Scheduled Tasks](https://www.baeldung.com/spring-scheduled-tasks)
  - [Scheduling Reference Documentation](https://docs.spring.io/spring/docs/5.1.6.RELEASE/spring-framework-reference/integration.html#scheduling)
 
-### 8. Cloud foundry
+### 8. SAP Cloud Platform & Cloud foundry
 
-Goal: get accustomed to Cloud Foundry environment
+Goal: get accustomed to SAP Cloud Platform and Cloud Foundry environments
 
 Suggested Reading:
 
- - [Deploying a Spring Boot Application to Cloud Foundry](https://www.baeldung.com/spring-boot-app-deploy-to-cloud-foundry)
+ - [Cloud Foundry environment within SAP Cloud Platform: FAQ](https://wiki.scn.sap.com/wiki/display/SAPHCP/Cloud+Foundry+environment+within+SAP+Cloud+Platform%3A+FAQ)
+ - [SAP CP & Cloud Foundry](https://blogs.sap.com/2019/02/24/sap-cloud-platform-environment-cloud-foundry-vs-neo/)
+ - [Build an App on Cloud Foundry and SAP Cloud Platform](https://mud.bluefinsolutions.com/2017/09/11/scp-crud/)
+ - [Sign-up for the free SAP Cloud Platform](https://blogs.sap.com/2017/05/16/sap-cloud-platform-trial-now-includes-cloud-foundry/)
 
 Online Shop:
 
  > Get access to Cloud Foundry
- - Register for a trial Cloud Foundry account [here](https://run.pivotal.io/)
- - Install Cloud Foundry CLI from [here](https://docs.run.pivotal.io/cf-cli/install-go-cli.html)
+ - Register for a trial Cloud Foundry account [here](https://account.hanatrial.ondemand.com/#/home/welcome)
+ - Install Cloud Foundry CLI from [here](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/4ef907afb1254e8286882a2bdef0edf4.html)
  
+ > We should now be able to login to our Cloud Foundry account via the CLI tool, supplying it with the region we selected and our SCP login details.
+    We are going to need a PostgreSQL database service. Commands to run:
+    
+ - cf login
+ - cf marketplace
+ - cf create-service postgresql v9.6-dev shop_db
+ > Find the connection details of the created database instance (hostname, port, username, password)
+
  > Prepare the application for deployment on a cloud infrastructure:
  - Create a new "cloud" profile
- - Configure the datasource for the new profile
- - Add the spring cloud dependencies
+ - Configure a PostGreSQL datasource for the new profile, with the connection details from above
+ - Build the app with cloud profile and push the application jar using cf
  > Deploy Online Shop to Cloud Foundry
- - obtain the generated application route to gain access to the REST endpoints
- - use the route to call the CRUD operations on Product and ProductCategories 
+ - Obtain the generated application route to gain access to the REST endpoints
+ - Use the route to call the CRUD operations on Product and ProductCategories 
 
 Further Resources:
 
  - [Deploy Spring Boot Hello World on Cloud Foundry - Setup PWS Console](https://howtodoinjava.com/spring-cloud/pivotal-cloud-foundry-spring-boot-example/)
-
+ - [SSL into SCP PostgreSQL database](https://blogs.sap.com/2018/04/27/how-to-use-an-ssh-tunnel-with-scp-cloud-foundry-backing-service/)
+ - [Access the SSL-ed database from Intellij](https://stackoverflow.com/questions/35337054/how-to-ssh-tunnel-and-connect-to-a-database-using-intellij-and-jdbc/51286469#51286469)
 ### OPT-1. OAuth
 
 Goal: Secure the online shop with OAuth 2.0.
