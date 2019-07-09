@@ -14,7 +14,7 @@
    * [5. Testing](#5-testing)
    * [6. Security](#6-security)
    * [7. Task Scheduler](#7-task-scheduler)
-   * [8. Cloud foundry](#8-cloud-foundry)
+   * [8. SAP Cloud Platform & Cloud Foundry](#8-sap-cloud-platform--cloud-foundry)
 
 ## Working Mode
 
@@ -33,7 +33,7 @@ For doing static code quality checks, two separate mechanisms will be used:
 ## Environment
 
 You can work using your local environment:
- - You need to install [Postman](https://www.getpostman.com/apps), [IntelliJ IDEA (Community)](https://www.jetbrains.com/idea/download/#section=windows), SonarLint and Lombok [plugins for IntelliJ](https://www.jetbrains.com/help/idea/managing-plugins.html#install_plugin_from_repo).
+ - You need to install [Postman](https://www.getpostman.com/apps), [IntelliJ IDEA (Community)](https://www.jetbrains.com/idea/download/#section=windows), SonarLint and Lombok [plugins for IntelliJ](https://www.jetbrains.com/help/idea/managing-plugins.html#install_plugin_from_repo), [PostgreSQL](https://www.postgresql.org/download/windows/).
  - If Maven does not work because of SSL errors, [setup the Zscaler certificate in your trust store](https://team.msg.de/site/IT/Freigegebene+Dokumente/Forms/AllItems.aspx?RootFolder=%2fsite%2fIT%2fFreigegebene%20Dokumente%2fAnleitungen%2fZscaler&FolderCTID=0x012000581B900D5D91664C93095DB345EDAFC4).
 
 ## Online Shop
@@ -101,8 +101,9 @@ Suggested Reading:
  - [Building an Application with Spring Boot](https://spring.io/guides/gs/spring-boot/)
  - [Configuration Properties](https://www.baeldung.com/configuration-properties-in-spring-boot)
  - [Introduction to Lombok](https://www.baeldung.com/intro-to-project-lombok)
- - [Introduction to H2 Database](http://www.topjavatutorial.com/misc/introduction-to-h2-database/)
-
+ - [Introduction to PostgreSQL Database](http://www.postgresqltutorial.com)
+ - [Set up a Spring Boot Application With PostgreSQL](https://dzone.com/articles/bounty-spring-boot-and-postgresql-database)
+ 
 Online Shop:
  
  > Register an account on GitHub and accept the training [GitHub Classroom Assignment](https://classroom.github.com/a/nnCheGru). This will create a new GitHub repository for you. Clone this repository locally and checkout the `develop` branch. During the course of the training, you will commit and push your work on this branch.
@@ -110,11 +111,9 @@ Online Shop:
  > Go to "Spring Initializr" and generate a new project:
  > - Group: `ro.msg.learning`,
  > - Artifact: `shop`,
- > - Dependencies: `Web`, `Security`, `JPA`, `Flyway`, `H2`, `Lombok`.
+ > - Dependencies: `Web`, `Security`, `JPA`, `Flyway`, `PostgreSQL Driver`, `Lombok`.
  >
  > Extract the generated `zip` file into the previously cloned repository. Import this project into your IDE. You can delete the `mvnw`, `mvnw.cmd` and `.mvn` files / folders as you have Maven in the IDE anyway.
- >
- > Enable the [H2 console for your application](https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/html/boot-features-sql.html#boot-features-sql-h2-console) and configure H2 to use a [file-based storage somewhere on your computer](https://stackoverflow.com/questions/37903105/how-to-configure-spring-boot-to-use-file-based-h2-database/37969181#37969181).
 
 Further Resources:
  - [Spring Boot Reference](https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/html/index.html) - Parts I and II
@@ -269,7 +268,7 @@ Further Resources:
  - [Spring Scheduled Tasks](https://www.baeldung.com/spring-scheduled-tasks)
  - [Scheduling Reference Documentation](https://docs.spring.io/spring/docs/5.1.6.RELEASE/spring-framework-reference/integration.html#scheduling)
 
-### 8. SAP Cloud Platform & Cloud foundry
+### 8. SAP Cloud Platform & Cloud Foundry
 
 Goal: get accustomed to SAP Cloud Platform and Cloud Foundry environments
 
