@@ -117,7 +117,7 @@ Online Shop:
 
 Further Resources:
  - [Spring Boot Reference](https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/html/index.html) - Parts I and II
- - [Spring Boot Tomcat Sample](https://github.com/spring-projects/spring-boot/tree/master/spring-boot-samples/spring-boot-sample-tomcat)
+ - [Spring Boot Tomcat Sample](https://www.baeldung.com/spring-boot-war-tomcat-deploy)
  - [Common Application Properties](https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/html/common-application-properties.html)
  - [Introduction to SLF4J](https://www.baeldung.com/slf4j-with-log4j2-logback)
 
