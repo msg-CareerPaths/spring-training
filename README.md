@@ -13,8 +13,7 @@
    * [4. JSON REST APIs](#4-json-rest-apis)
    * [5. Testing](#5-testing)
    * [6. Security](#6-security)
-   * [7. Task Scheduler](#7-task-scheduler)
-   * [8. SAP Cloud Platform & Cloud Foundry](#8-sap-cloud-platform--cloud-foundry)
+   * [7. SAP Cloud Platform & Cloud Foundry](#7-sap-cloud-platform--cloud-foundry)
 
 ## Working Mode
 
@@ -251,26 +250,7 @@ Further Resources:
  - [Web Authentication Methods Explained](https://blog.risingstack.com/web-authentication-methods-explained/)
  - [Spring in Action](https://1drv.ms/b/s!AiBPL7npTofshY5PJim4M5RiiOyu7w) - Part 1, Chapter 4
 
-### 7. Task Scheduler
-
-Goal: Schedule a simple task to run periodically.
-
-Suggested Reading:
-
- - [Scheduling Tasks](https://spring.io/guides/gs/scheduling-tasks/)
-
-Online Shop:
-
- > The owner of the Online Shop wants to see a sales report every morning for the day before. To cater for this requirement, create a periodical job that runs at the end of each day. It should aggregate all the sales revenues for each location for that day and store the result into the *Revenue* database table. 
- >
- > Create a `@RestController` with a `GET` mapping for exporting the revenue data for a given date.
-
-Further Resources:
-
- - [Spring Scheduled Tasks](https://www.baeldung.com/spring-scheduled-tasks)
- - [Scheduling Reference Documentation](https://docs.spring.io/spring/docs/5.1.6.RELEASE/spring-framework-reference/integration.html#scheduling)
-
-### 8. SAP Cloud Platform & Cloud Foundry
+### 7. SAP Cloud Platform & Cloud Foundry
 
 Goal: get accustomed to SAP Cloud Platform and Cloud Foundry environments
 
@@ -279,12 +259,13 @@ Suggested Reading:
  - [Cloud Foundry environment within SAP Cloud Platform: FAQ](https://wiki.scn.sap.com/wiki/display/SAPHCP/Cloud+Foundry+environment+within+SAP+Cloud+Platform%3A+FAQ)
  - [SAP CP & Cloud Foundry](https://blogs.sap.com/2019/02/24/sap-cloud-platform-environment-cloud-foundry-vs-neo/)
  - [Build an App on Cloud Foundry and SAP Cloud Platform](https://mud.bluefinsolutions.com/2017/09/11/scp-crud/)
- - [Sign-up for the free SAP Cloud Platform](https://blogs.sap.com/2017/05/16/sap-cloud-platform-trial-now-includes-cloud-foundry/)
+ - [Docker postgres image documentation](https://docs.docker.com/samples/library/postgres/)
+ - [Dockerize postgresql](https://docs.docker.com/engine/examples/postgresql_service/) 
 
 Online Shop:
 
  > Get access to Cloud Foundry
- - Register for a trial Cloud Foundry account [here](https://account.hanatrial.ondemand.com/#/home/welcome)
+ - Ask mentors for Cloud Foundry Account credentials
  - Install Cloud Foundry CLI from [here](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/4ef907afb1254e8286882a2bdef0edf4.html)
  
  > We should now be able to login to our Cloud Foundry account via the CLI tool, supplying it with the region we selected and our SCP login details.
@@ -296,6 +277,7 @@ Online Shop:
  > Find the connection details of the created database instance (hostname, port, username, password)
 
  > Prepare the application for deployment on a cloud infrastructure:
+ - Install [docker toolbox](https://docs.docker.com/toolbox/toolbox_install_windows/), download postgres image and create a container with a shop database out of it
  - Create a new "cloud" profile
  - Configure a PostGreSQL datasource for the new profile, with the connection details from above
  - Build the app with cloud profile and push the application jar using cf
@@ -334,7 +316,26 @@ Further Resources:
  - [Spring OAuth 2 Developers Guide](https://projects.spring.io/spring-security-oauth/docs/oauth2.html)
  - [Spring SSO vs Resource Server](https://www.baeldung.com/spring-security-oauth2-enable-resource-server-vs-enable-oauth2-sso)
 
-### OPT-2. REST Template
+### OPT-2. Task Scheduler
+
+Goal: Schedule a simple task to run periodically.
+
+Suggested Reading:
+
+ - [Scheduling Tasks](https://spring.io/guides/gs/scheduling-tasks/)
+
+Online Shop:
+
+ > The owner of the Online Shop wants to see a sales report every morning for the day before. To cater for this requirement, create a periodical job that runs at the end of each day. It should aggregate all the sales revenues for each location for that day and store the result into the *Revenue* database table. 
+ >
+ > Create a `@RestController` with a `GET` mapping for exporting the revenue data for a given date.
+
+Further Resources:
+
+ - [Spring Scheduled Tasks](https://www.baeldung.com/spring-scheduled-tasks)
+ - [Scheduling Reference Documentation](https://docs.spring.io/spring/docs/5.1.6.RELEASE/spring-framework-reference/integration.html#scheduling)
+
+### OPT-3. REST Template
 
 Goal: Consume an external API using REST Templates.
 
@@ -358,7 +359,7 @@ Further Resources:
  - [Spring in Action](https://1drv.ms/b/s!AiBPL7npTofshY5PJim4M5RiiOyu7w) - Part 2, Chapter 7.1
 
 
-### OPT-3. MongoDB
+### OPT-4. MongoDB
 
 Goal: Store unstructured data in a NoSQL database.
 
@@ -376,7 +377,7 @@ Further Resources:
 
  - [Spring MongoDB Reference](https://docs.spring.io/spring-data/mongodb/docs/2.1.6.RELEASE/reference/html/)
 
-### OPT-4. RabbitMQ
+### OPT-5. RabbitMQ
 
 Goal: Asynchronously communicate with a background worker application.
 
@@ -394,7 +395,7 @@ Further Resources:
  - [Spring AMQP Reference](https://docs.spring.io/spring-amqp/docs/2.1.5.RELEASE/reference/)
  - [An Introduction to Message Brokers](https://medium.com/@xaviergeerinck/an-introduction-to-message-brokers-9bd203b4ebbd)
 
-### OPT-5. Java Mail
+### OPT-6. Java Mail
 
 Goal: Send confirmation emails to customers when orders are created.
 
