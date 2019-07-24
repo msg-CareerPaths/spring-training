@@ -211,15 +211,6 @@ Online Shop:
  >
  > - Create a new order successfully,
  > - Fail to create a new order due to missing stock.
- >
- > Create a `@RestController` enabled just in the `test` profile, which exposes an API for clearing / populating the in-memory database.
- >
- > Implement Postman API tests which use the above-mentioned endpoint to set-up / tear-down the tests, for the following functionalities:
- >
- > - Create a new order successfully,
- > - Export the stocks,
- > - Fail to create a new order due to missing stock,
- > - Fail to create a new order due to unknown product ID(s).
 
 Further Resources:
  
