@@ -17,6 +17,14 @@
    * [7. Security](#7-security)
    * [8. REST Template](#8-rest-template)
    * [9. Task Scheduler](#9-task-scheduler)
+   * [OPT-1. JDBC](#opt-1-jdbc)
+   * [OPT-2. MongoDB](#opt-2-mongodb)
+   * [OPT-3. OAuth](#opt-3-oauth)
+   * [OPT-4. Olingo](#opt-4-olingo)
+   * [OPT-5. MVC with Thymeleaf](#opt-5-mvc-with-thymeleaf)
+   * [OPT-6. RabbitMQ](#opt-6-rabbitmq)
+   * [OPT-7. Java Mail](#opt-7-java-mail)
+   * [OPT-8. WebSocket](#opt-8-websocket)
 
 ## Working Mode
 
