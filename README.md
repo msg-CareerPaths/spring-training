@@ -12,6 +12,8 @@
    * [3. JPA and Flyway](#3-jpa-and-flyway)
    * [4. JSON REST APIs](#4-json-rest-apis)
    * [5. Security](#5-security)
+   * [OPT-1. Olingo](#opt-1-olingo)
+
 
 ## Working Mode
 
@@ -193,7 +195,7 @@ Online Shop:
  >
  > Build two Spring configurations for securing your application: one with HTTP Basic and one with Form based login. These configurations should be active based on a Spring profile (e.g. `with-basic` and `with-form`) or based on a property such that only one of them is active at a time.
  >
- > Adjust your Postman Tests to also handle authentication.
+ > Use Postman Tests to handle authentication.
 
 Further Resources:
 
