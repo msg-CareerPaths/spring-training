@@ -12,19 +12,11 @@
    * [2. Spring Boot](#2-spring-boot)
    * [3. JPA and Flyway](#3-jpa-and-flyway)
    * [4. JSON REST APIs](#4-json-rest-apis)
-   * [5. Custom Format Support](#5-custom-format-support)
-   * [6. Testing](#6-testing)
-   * [7. Security](#7-security)
-   * [8. REST Template](#8-rest-template)
-   * [9. Task Scheduler](#9-task-scheduler)
-   * [OPT-1. JDBC](#opt-1-jdbc)
-   * [OPT-2. MongoDB](#opt-2-mongodb)
-   * [OPT-3. OAuth](#opt-3-oauth)
-   * [OPT-4. Olingo](#opt-4-olingo)
-   * [OPT-5. MVC with Thymeleaf](#opt-5-mvc-with-thymeleaf)
-   * [OPT-6. RabbitMQ](#opt-6-rabbitmq)
-   * [OPT-7. Java Mail](#opt-7-java-mail)
-   * [OPT-8. WebSocket](#opt-8-websocket)
+   * [5. Testing](#5-testing)
+   * [6. Security](#6-security)
+   * [OPT-1. OAuth](#opt-1-oauth)
+   * [OPT-2. Java Mail](#opt-2-java-mail)
+   * [OPT-3. WebSocket](#opt-3-websocket)
 
 ## Working Mode
 
@@ -44,7 +36,7 @@ For doing static code quality checks, two separate mechanisms will be used:
 
 You can work using your local environment:
  - You need to install [Postman](https://www.getpostman.com/apps), [IntelliJ IDEA (Community)](https://www.jetbrains.com/idea/download/#section=windows), SonarLint and Lombok [plugins for IntelliJ](https://www.jetbrains.com/help/idea/managing-plugins.html#install_plugin_from_repo).
- - If Maven does not work because of SSL errors, [setup the Zscaler certificate in your trust store](https://team.msg.de/site/IT/Freigegebene+Dokumente/Forms/AllItems.aspx?RootFolder=%2fsite%2fIT%2fFreigegebene%20Dokumente%2fAnleitungen%2fZscaler&FolderCTID=0x012000581B900D5D91664C93095DB345EDAFC4).
+ - If Maven does not work because of SSL errors, [setup the Zscaler certificate in your trust store](https://team.msg.de/site/IT/Freigegebene%20Dokumente/Forms/AllItems.aspx?RootFolder=%2Fsite%2FIT%2FFreigegebene%20Dokumente%2FAnleitungen%2FZscaler&FolderCTID=0x012000581B900D5D91664C93095DB345EDAFC4&View=%7B8F4AC536%2DBC7A%2D4D89%2DA598%2D491A539B7BBE%7D).
 
 ## Time Bookings
 
@@ -138,7 +130,7 @@ Online Shop:
 
 Further Resources:
  - [Spring Boot Reference](https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/html/index.html) - Parts I and II
- - [Spring Boot Tomcat Sample](https://github.com/spring-projects/spring-boot/tree/master/spring-boot-samples/spring-boot-sample-tomcat)
+ - [Spring Boot Tomcat Sample](https://github.com/oktadev/okta-spring-boot-tomcat-example)
  - [Common Application Properties](https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/html/common-application-properties.html)
  - [Introduction to SLF4J](https://www.baeldung.com/slf4j-with-log4j2-logback)
 
@@ -200,47 +192,13 @@ Online Shop:
 Further Resources:
 
  - [RESTful API Designing Guidelines](https://hackernoon.com/restful-api-designing-guidelines-the-best-practices-60e1d954e7c9)
- - [DDD and Spring](http://static.olivergierke.de/lectures/ddd-and-spring/)
+ - [DDD and Spring](https://www.baeldung.com/hexagonal-architecture-ddd-spring)
  - [Transaction Management](https://docs.spring.io/spring/docs/5.1.6.RELEASE/spring-framework-reference/data-access.html#transaction)
  - [ConditionalOnProperty](https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/api/org/springframework/boot/autoconfigure/condition/ConditionalOnProperty.html)
  - [Spring in Action](https://1drv.ms/b/s!AiBPL7npTofshY5PJim4M5RiiOyu7w) - Part 2, Chapter 6
 
 
-### 5. Custom Format Support
-
-Goal: Add support for a custom data format (CSV) for response bodies.
-
-Required Reading:
-
- - [Customizing Response Rendering](https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/html/howto-spring-mvc.html#howto-customize-the-responsebody-rendering)
- - [CSV with Jackson](http://www.cowtowncoder.com/blog/archives/2012/03/entry_468.html)
-
-Online Shop:
-
- > Create a service class that handles the export of stocks. It has one method for exporting the stock of a given location (input = location ID, output = list of stocks).
- >
- > Create a message converter for CSV handling, using the [Jackson CSV library](https://github.com/FasterXML/jackson-dataformats-text/tree/master/csv). First create a utility class that has the following methods and then wrap it into a subclass of `AbstractGenericHttpMessageConverter`:
- >
- > - `fromCsv`:
- >   - Has a generic type parameter `<T>`, representing the type of the POJOs stored in the CSV,
- >   - Returns a `List<T>`,
- >   - Has a parameter `Class<T>`,
- >   - Has an input stream parameter containing the CSV file.
- > - `toCsv`:
- >   - Has a generic type parameter `<T>`, representing type of the POJOs stored in the CSV,
- >   - Returns `void`,
- >   - Has a parameter `Class<T>`,
- >   - Has a parameter `List<T>`, representing the list of POJOs to be written in the CSV,
- >   - Has an output stream parameter in which the CSV file is written.
- >
- > Create a Rest Controller for the "Export stock" operation with a `GET` mapping producing a CSV response.
-
-Further Resources:
-
- - [Jackson CSV library](https://github.com/FasterXML/jackson-dataformats-text/tree/master/csv)
- - [HTTP Message Converters](https://www.baeldung.com/spring-httpmessageconverter-rest)
-
-### 6. Testing
+### 5. Testing
 
 Goal: Perform tests of the following types: unit tests, integration tests and API tests.
 
@@ -280,7 +238,7 @@ Further Resources:
  - [Spring Boot Testing Reference](https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/html/boot-features-testing.html)
  - [Postman Scripts Reference](https://learning.getpostman.com/docs/postman/scripts/intro_to_scripts)
 
-### 7. Security
+### 6. Security
 
 Goal: Secure your application with HTTP Basic Authentication and Form Based Authentication.
 
@@ -302,84 +260,8 @@ Further Resources:
  - [Web Authentication Methods Explained](https://blog.risingstack.com/web-authentication-methods-explained/)
  - [Spring in Action](https://1drv.ms/b/s!AiBPL7npTofshY5PJim4M5RiiOyu7w) - Part 1, Chapter 4
 
-### 8. REST Template
 
-Goal: Consume an external API using REST Templates.
-
-Required Reading:
-
- - [The Guide to RestTemplate](https://www.baeldung.com/rest-template)
-
-Online Shop:
-
- > Implement a new greedy strategy that selects locations based on the proximity to the delivery address:
- >
- > - Find the location which is the closest to the order's delivery address. 
- > - Take all the available needed products from that location.
- > - Until we have all the products we need, repeat the above steps (by going to the second closest location, then to the third and so on).
- >
- > To compute the distances, use the [MapQuest route matrix API](https://developer.mapquest.com/documentation/directions-api/route-matrix/post/). You will first need to [register on the MapQuest site](https://developer.mapquest.com/plan_purchase/steps/business_edition/business_edition_free/register) and obtain an API Key.
-
-Further Resources:
-
- - [Spring REST Client Example](https://howtodoinjava.com/spring-restful/spring-restful-client-resttemplate-example/)
- - [Spring in Action](https://1drv.ms/b/s!AiBPL7npTofshY5PJim4M5RiiOyu7w) - Part 2, Chapter 7.1
-
-### 9. Task Scheduler
-
-Goal: Schedule a simple task to run periodically.
-
-Required Reading:
-
- - [Scheduling Tasks](https://spring.io/guides/gs/scheduling-tasks/)
-
-Online Shop:
-
- > The owner of the Online Shop wants to see a sales report every morning for the day before. To cater for this requirement, create a periodical job that runs at the end of each day. It should aggregate all the sales revenues for each location for that day and store the result into the *Revenue* database table. 
- >
- > Create a `@RestController` with a `GET` mapping for exporting the revenue data for a given date.
-
-Further Resources:
-
- - [Spring Scheduled Tasks](https://www.baeldung.com/spring-scheduled-tasks)
- - [Scheduling Reference Documentation](https://docs.spring.io/spring/docs/5.1.6.RELEASE/spring-framework-reference/integration.html#scheduling)
-
-### OPT-1. JDBC
-
-Goal: Implement repositories manually and become familiar with JDBC.
-
-Required Reading:
-
- - [Spring JDBC Template](https://www.baeldung.com/spring-jdbc-jdbctemplate)
-
-Online Shop:
-
- > Write Repository implementations using JDBC for the following tables: `Product`, `ProductCategory` to replace the automatically generated Spring Data repositories.
-
-Further Resources:
-
- - [Accessing Relational Data using JDBC with Spring](https://spring.io/guides/gs/relational-data-access/)
- - [Spring Data Access with JDBC Reference](https://docs.spring.io/spring/docs/5.1.6.RELEASE/spring-framework-reference/data-access.html#jdbc)
-
-### OPT-2. MongoDB
-
-Goal: Store unstructured data in a NoSQL database.
-
-Required Reading:
-
- - [NoSQL Databases](https://searchdatamanagement.techtarget.com/definition/NoSQL-Not-Only-SQL)
- - [What is MongoDB?](https://www.mongodb.com/what-is-mongodb)
- - [Accessing Data with MongoDB](https://spring.io/guides/gs/accessing-data-mongodb/)
-
-Online Shop:
-
- >
-
-Further Resources:
-
- - [Spring MongoDB Reference](https://docs.spring.io/spring-data/mongodb/docs/2.1.6.RELEASE/reference/html/)
-
-### OPT-3. OAuth
+### OPT-1. OAuth
 
 Goal: Secure the online shop with OAuth 2.0.
 
@@ -387,7 +269,7 @@ Required Reading:
 
  - [The Simplest Guide to OAuth 2.0](https://medium.com/@darutk/the-simplest-guide-to-oauth-2-0-8c71bd9a15bb)
  - [Authorization Server Reference](https://docs.spring.io/spring-security-oauth2-boot/docs/2.1.4.RELEASE/reference/html/boot-features-security-oauth2-authorization-server.html)
- - [Resource Server Reference](https://docs.spring.io/spring-security-oauth2-boot/docs/current/reference/html/boot-features-security-oauth2-resource-server.html)
+ - [Resource Server Reference](https://www.baeldung.com/spring-security-oauth-resource-server)
  - [Spring Boot OAuth 2 Guide](https://spring.io/guides/tutorials/spring-boot-oauth2/)
 
 Online Shop:
@@ -403,73 +285,7 @@ Further Resources:
  - [Spring OAuth 2 Developers Guide](https://projects.spring.io/spring-security-oauth/docs/oauth2.html)
  - [Spring SSO vs Resource Server](https://www.baeldung.com/spring-security-oauth2-enable-resource-server-vs-enable-oauth2-sso)
 
-### OPT-4. Olingo
-
-Goal: expose a subset of the existing business logic via OData services.
-
-Required Reading:
-
- - [Intro to OData](./documents/intro-to-odata.pdf)
- - [Olingo OData 2](https://olingo.apache.org/doc/odata2/index.html)
- - [OData v2 Examples](./examples/odata)
-
-Online Shop:
-
- > Expose the following entities through a JPA-based OData service:
- >
- > - Order
- > - OrderDetails
- > - Product
- >
- > Use the [JPA-EDM XML mapping](https://olingo.apache.org/doc/odata2/tutorials/jparedefinemetadata.html) to exclude the unneeded JPA entities from the service, exclude any fields of type `LocalDate` or `LocalDateTime` and rename the entities and fields to conform to an UpperCamelCase naming convention.
- >
- > Create another separate OData service (with a separate Service Factory and separate Servlet) using the core processor. You will have to manually define a `EmdProvider` and a `ODataSingleProcessor` This service should expose the "create order" operation. 
- > 
- > Because for creating a new order, you must pass as an input a collection of products and quantities, you should use a *deep insert* OData operation. A deep insert is simply a regular *create* call with also passes the children entities).
-
-### OPT-5. MVC with Thymeleaf
-
-Goal: Build a simple user interface for the online shop.
-
-Required Reading:
-
- - [Spring MVC Tutorial](https://www.baeldung.com/spring-mvc-tutorial)
- - [Spring Boot CRUD with Thymeleaf](https://www.baeldung.com/spring-boot-crud-thymeleaf)
- - [Introduction to Thymeleaf with MVC](https://www.baeldung.com/thymeleaf-in-spring-mvc)
-
-Online Shop:
-
- > Create a set of `@Controllers` and views to build-up a simple U.I. covering the following features:
- >
- > - Login and logout,
- > - Browse products and "add to cart",
- > - View "cart" contents and submit order.
-
-Further Reading:
-
- - [Using Thymeleaf Documentation](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html)
- - [Thymeleaf Spring Documentation](https://www.thymeleaf.org/doc/tutorials/3.0/thymeleafspring.html)
- - [Guide: Handling Form Submission](https://spring.io/guides/gs/handling-form-submission/)
-
-### OPT-6. RabbitMQ
-
-Goal: Asynchronously communicate with a background worker application.
-
-Required Reading:
-
- - [Understanding Message Brokers](https://www.3pillarglobal.com/insights/rabbitmq-understanding-message-broker)
- - [Spring AMQP Tutorial](https://www.rabbitmq.com/tutorials/tutorial-one-spring-amqp.html)
-
-Online Shop:
-
- >
-
-Further Resources:
-
- - [Spring AMQP Reference](https://docs.spring.io/spring-amqp/docs/2.1.5.RELEASE/reference/)
- - [An Introduction to Message Brokers](https://medium.com/@xaviergeerinck/an-introduction-to-message-brokers-9bd203b4ebbd)
-
-### OPT-7. Java Mail
+### OPT-2. Java Mail
 
 Goal: Send confirmation emails to customers when orders are created.
 
@@ -491,7 +307,7 @@ Further Resources:
  - [Sending Emails with Java](https://www.baeldung.com/java-email)
  - [Spring Email Reference](https://docs.spring.io/spring/docs/5.1.6.RELEASE/spring-framework-reference/integration.html#mail)
 
-### OPT-8. WebSocket
+### OPT-3. WebSocket
 
 Goal: Publish events though WebSocket to allow potential user interfaces to automatically update their displayed data.
 
