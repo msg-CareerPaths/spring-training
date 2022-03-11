@@ -158,7 +158,7 @@ Further Resources:
  - [Spring Database Initialization](https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/html/howto-database-initialization.html#howto-execute-flyway-database-migrations-on-startup)
  - [Spring in Action](https://1drv.ms/b/s!AiBPL7npTofshY5PJim4M5RiiOyu7w) - Part 1, Chapter 3.2
 
-### 4. JSON REST APIs
+### 4. JSON REST APIs 
 
 Goal: Group business logic into service classes and expose this logic through REST interfaces.
 
