@@ -44,9 +44,9 @@ Use the following booking codes to track activities:
 
 | Booking Code                            | Activity                                                                                                          |
 |-----------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| Schul. & Einarb. JAVA - allg. Einarb.   | Going through the learning material; tutorials; doing own theoretical investigations; attending presentations.    |
-| Schul. & Einarb. JAVA - Impl.-Phase     | Online shop implementation.                                                                                       |
-| Schul. & Einarb. JAVA - Komm und JF     | Regular calls, internal discussions (on-boarding, off-boarding).                                                  |
+| Spring Training: Learning               | Going through the learning material; tutorials; doing own theoretical investigations; attending presentations.    |
+| Spring Training - Implementation        | Online shop implementation.                                                                                       |
+| Spring Training - Meetings              | Regular calls, internal discussions (on-boarding, off-boarding).                                                  |
 
 In the booking description, please use the following format: `Chapter: Brief activity description`, for the regular calls, simply state the name of the meeting. 
 
