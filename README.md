@@ -43,7 +43,7 @@ For doing static code quality checks, two separate mechanisms will be used:
 ## Environment
 
 You can work using your local environment:
- - You need to install [Postman](https://www.getpostman.com/apps), [IntelliJ IDEA (Community)](https://www.jetbrains.com/idea/download/#section=windows), SonarLint and Lombok [plugins for IntelliJ](https://www.jetbrains.com/help/idea/managing-plugins.html#install_plugin_from_repo).
+ - You need to install [Postman](https://www.getpostman.com/apps), [IntelliJ IDEA (Community)](https://www.jetbrains.com/idea/download/#section=windows), SonarLint and Lombok [plugins for IntelliJ](https://www.jetbrains.com/help/idea/managing-plugins.html#install_plugin_from_repo). Note: the newer versions of Intellij already have the Lombok installed. Please check it before trying to install it.
  - If Maven does not work because of SSL errors, [setup the Zscaler certificate in your trust store](https://team.msg.de/site/IT/Freigegebene%20Dokumente/Forms/AllItems.aspx?RootFolder=%2Fsite%2FIT%2FFreigegebene%20Dokumente%2FAnleitungen%2FZscaler&FolderCTID=0x012000581B900D5D91664C93095DB345EDAFC4&View=%7B8F4AC536%2DBC7A%2D4D89%2DA598%2D491A539B7BBE%7D).
 
 ## Time Bookings
