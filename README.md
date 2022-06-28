@@ -125,7 +125,7 @@ Required Reading:
 
 Online Shop:
  
- > Register an account on GitHub and accept the training [GitHub Classroom Assignment](https://classroom.github.com/a/qiaU7uWM). This will create a new GitHub repository for you. Clone this repository locally and checkout the `develop` branch. During the course of the training, you will commit and push your work on this branch.
+ > Register an account on GitHub and accept the training [GitHub Classroom Assignment](https://classroom.github.com/a/qiaU7uWM). This will create a new GitHub repository for you. Clone this repository locally and create a develop branch from the master branch before starting work. During the course of the training, you will commit and push your work on this branch.
  >
  > Go to "Spring Initializr" and generate a new project:
  > - Group: `ro.msg.learning`,
@@ -176,6 +176,7 @@ Required Reading:
  - [Spring REST Tutorial](https://spring.io/guides/tutorials/rest/)
  - [Spring Service Components](https://www.tutorialspoint.com/spring_boot/spring_boot_service_components.htm)
  - [Strategy Design Pattern](https://en.wikipedia.org/wiki/Strategy_pattern)
+ - [Data Transfer Objects](https://www.baeldung.com/java-dto-pattern)
 
 Online Shop:
  > Create a simple API for exposing the products and product categories: 
@@ -204,6 +205,7 @@ Further Resources:
  - [Transaction Management](https://docs.spring.io/spring/docs/5.1.6.RELEASE/spring-framework-reference/data-access.html#transaction)
  - [ConditionalOnProperty](https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/api/org/springframework/boot/autoconfigure/condition/ConditionalOnProperty.html)
  - [Spring in Action](https://1drv.ms/b/s!AiBPL7npTofshY5PJim4M5RiiOyu7w) - Part 2, Chapter 6
+ - [Strategy Design Pattern](https://www.youtube.com/watch?v=v9ejT8FO-7I&t=991s)
 
 
 ### 5. Custom Format Support
