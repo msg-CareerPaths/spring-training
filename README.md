@@ -214,7 +214,6 @@ Online Shop:
 
  > Implement unit tests for the following functionalities:
  >
- > - CSV serialization and de-serialization,
  > - Location strategies.
  >
  > Create a `test` Spring profile which uses an in-memory H2 database instance. 
@@ -229,7 +228,6 @@ Online Shop:
  > Implement Postman API tests which use the above-mentioned endpoint to set-up / tear-down the tests, for the following functionalities:
  >
  > - Create a new order successfully,
- > - Export the stocks,
  > - Fail to create a new order due to missing stock,
  > - Fail to create a new order due to unknown product ID(s).
 
