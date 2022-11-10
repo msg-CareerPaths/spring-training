@@ -1,4 +1,4 @@
-### 9. REST Template
+### 10. REST Template
 
 Goal: Consume an external API using REST Templates.
 
