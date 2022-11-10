@@ -1,4 +1,4 @@
-### 6. Custom Format Support
+### 7. Custom Format Support
 
 Goal: Add support for a custom data format (CSV) for response bodies.
 
