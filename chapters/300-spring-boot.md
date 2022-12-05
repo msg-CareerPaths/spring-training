@@ -7,7 +7,8 @@ Required Reading:
 - [Building an Application with Spring Boot](https://spring.io/guides/gs/spring-boot/)
 - [Configuration Properties](https://www.baeldung.com/configuration-properties-in-spring-boot)
 - [Introduction to Lombok](https://www.baeldung.com/intro-to-project-lombok)
-- [Introduction to H2 Database](http://www.topjavatutorial.com/misc/introduction-to-h2-database/)
+- [Introduction to PostgreSQL](https://www.youtube.com/watch?v=Dd2ej-QKrWY&ab_channel=Codemy.com)
+- [PostgreSQL with Maven](https://www.geeksforgeeks.org/spring-boot-integration-with-postgresql-as-a-maven-project/)
 
 Online Shop:
 
@@ -16,11 +17,11 @@ Online Shop:
 > Go to "Spring Initializr" and generate a new project:
 > - Group: `ro.msg.learning`,
 > - Artifact: `shop`,
-> - Dependencies: `Web`, `Security`, `JPA`, `Flyway`, `H2`, `Lombok`.
+> - Dependencies: `Web`, `JPA`, `Flyway`, `PostgreSQL Driver`, `Lombok`.
 >
 > Extract the generated `zip` file into the previously cloned repository. Import this project into your IDE. You can delete the `mvnw`, `mvnw.cmd` and `.mvn` files / folders as you have Maven in the IDE anyway.
 >
-> Enable the [H2 console for your application](https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/html/boot-features-sql.html#boot-features-sql-h2-console) and configure H2 to use a [file-based storage somewhere on your computer](https://stackoverflow.com/questions/37903105/how-to-configure-spring-boot-to-use-file-based-h2-database/37969181#37969181).
+> Install [pgAdmin](https://www.sqlshack.com/an-overview-of-pgadmin-postgresql-management-tool/) on your computer which will provide you a way to query and manage your database. 
 
 Further Resources:
 - [Spring Boot Reference](https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/html/index.html) - Parts I and II
