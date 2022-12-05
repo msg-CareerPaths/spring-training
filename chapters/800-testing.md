@@ -15,9 +15,9 @@ Online Shop:
 > - CSV serialization and de-serialization,
 > - Location strategies.
 >
-> Create a `test` Spring profile which uses an in-memory H2 database instance.
+> Create a `test` Spring profile which uses a special TestContainer for running the integration tests. This container will create the database schema at each test run (this simulates the in-memory database).
 >
-> Implement integration tests which use this profile and thus use the in-memory database for the following functionalities:
+> Implement integration tests which use this profile and thus use the TestContainer for the following functionalities:
 >
 > - Create a new order successfully,
 > - Fail to create a new order due to missing stock.
@@ -33,7 +33,7 @@ Online Shop:
 
 Further Resources:
 
-- [Self-Contained Testing Using an In-Memory Database](https://www.baeldung.com/spring-jpa-test-in-memory-database)
+- [Self-Contained Testing Using TestContainer with PostgreSQL](https://www.baeldung.com/spring-boot-testcontainers-integration-test)
 - [Test Pyramid](https://martinfowler.com/bliki/TestPyramid.html)
 - [Spring Boot Testing Reference](https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/html/boot-features-testing.html)
 - [Postman Scripts Reference](https://learning.getpostman.com/docs/postman/scripts/intro_to_scripts)
