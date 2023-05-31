@@ -1,4 +1,4 @@
-### OPT-3. OAuth
+### 8. Security
 
 Goal: Secure your application with OAuth2 (JWT Token)
 
