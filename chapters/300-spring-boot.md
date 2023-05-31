@@ -12,7 +12,7 @@ Required Reading:
 
 Online Shop:
 
-> Register an account on GitHub and accept the training [GitHub Classroom Assignment](https://classroom.github.com/a/qiaU7uWM). This will create a new GitHub repository for you. Clone this repository locally and create a develop branch from the master branch before starting work. During the course of the training, you will commit and push your work on this branch.
+> Register an account on GitHub with the msg email and create a new GitHub repository for Spring Training. Clone this repository locally and create a develop branch from the master branch before starting to work. During the course of the training, you will commit and push your work on this branch.
 >
 > Go to "Spring Initializr" and generate a new project:
 > - Group: `ro.msg.learning`,
