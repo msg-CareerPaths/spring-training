@@ -40,4 +40,4 @@ The application will deal with the management and daily functioning of a small o
 
 Throughout the application, we assume that prices are always in EUR and weights are always in KG.
 
-![Data Model](https://raw.githubusercontent.com/msg-CareerPaths/spring-training/master/diagrams/data-model.svg "Data Model")
+![Data Model](https://raw.githubusercontent.com/msg-CareerPaths/spring-training/career-start-2023/diagrams/careerStart-data-model.svg "Data Model")
