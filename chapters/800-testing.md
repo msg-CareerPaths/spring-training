@@ -12,7 +12,6 @@ Online Shop:
 
 > Implement unit tests for the following functionalities:
 >
-> - CSV serialization and de-serialization,
 > - Location strategies.
 >
 > Create a `test` Spring profile which uses a special TestContainer for running the integration tests. This container will create the database schema at each test run (this simulates the in-memory database).
