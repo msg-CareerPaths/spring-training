@@ -1,4 +1,4 @@
-### OPT-7. Java Mail
+### OPT-1. Java Mail
 
 Goal: Send confirmation emails to customers when orders are created.
 
