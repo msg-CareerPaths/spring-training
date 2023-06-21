@@ -16,7 +16,9 @@ For doing static code quality checks, two separate mechanisms will be used:
 
 You can work using your local environment:
 - You need to install [Postman](https://www.getpostman.com/apps), [IntelliJ IDEA (Community)](https://www.jetbrains.com/idea/download/#section=windows), SonarLint and Lombok [plugins for IntelliJ](https://www.jetbrains.com/help/idea/managing-plugins.html#install_plugin_from_repo). Note: the newer versions of Intellij already have the Lombok installed. Please check it before trying to install it.
-- If Maven does not work because of SSL errors, [setup the Zscaler certificate in your trust store](https://team.msg.de/site/IT/Freigegebene%20Dokumente/Forms/AllItems.aspx?RootFolder=%2Fsite%2FIT%2FFreigegebene%20Dokumente%2FAnleitungen%2FZscaler&FolderCTID=0x012000581B900D5D91664C93095DB345EDAFC4&View=%7B8F4AC536%2DBC7A%2D4D89%2DA598%2D491A539B7BBE%7D).
+- You will also need [PostgreSQL](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads).
+- Install also [pgAdmin](https://www.sqlshack.com/an-overview-of-pgadmin-postgresql-management-tool/) on your computer which will provide you a way to query and manage your database.
+- If Maven or anything else does not work because of SSL errors, ask the mentors or coordinators for the Zscaler setup guide (you may need to follow _3.2.1 Java section_, _3.2.3 Intellij_ and _3.3 Git_ from this guide).
 
 ## Time Bookings
 
@@ -40,4 +42,4 @@ The application will deal with the management and daily functioning of a small o
 
 Throughout the application, we assume that prices are always in EUR and weights are always in KG.
 
-![Data Model](https://raw.githubusercontent.com/msg-CareerPaths/spring-training/career-start-2023/diagrams/careerStart-data-model.svg "Data Model")
+![Data Model](https://raw.githubusercontent.com/msg-CareerPaths/spring-training/master/diagrams/careerStart-data-model.svg "Data Model")
