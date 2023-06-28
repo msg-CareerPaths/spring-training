@@ -15,6 +15,7 @@
    * [6. Strategy Design Pattern](https://github.com/msg-CareerPaths/spring-training/blob/career-start-2023/chapters/600-strategy-design-pattern.md)
    * [7. Testing](https://github.com/msg-CareerPaths/spring-training/blob/career-start-2023/chapters/800-testing.md)
    * [8. Security](https://github.com/msg-CareerPaths/spring-training/blob/career-start-2023/chapters/opt-300-oauth.md)
+   * [9. State Machine](https://github.com/msg-CareerPaths/spring-training/blob/career-start-2023/chapters/900-state-machine.md)
    * [OPT-1. Java Mail](https://github.com/msg-CareerPaths/spring-training/blob/career-start-2023/chapters/opt-700-java-mail.md)
    * [OPT-2. WebSocket](https://github.com/msg-CareerPaths/spring-training/blob/career-start-2023/chapters/opt-800-websocket.md)
 
