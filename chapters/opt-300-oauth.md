@@ -28,7 +28,7 @@ Online Shop:
 
 Further Resources:
 
-- [Spring OAuth 2 Developers Guide](https://projects.spring.io/spring-security-oauth/docs/oauth2.html)
+- [Spring OAuth 2 Developers Guide](https://developer.okta.com/blog/2019/03/12/oauth2-spring-security-guide)
 - [Spring SSO vs Resource Server](https://www.baeldung.com/spring-security-oauth2-enable-resource-server-vs-enable-oauth2-sso)
 - [Spring Boot OAuth 2 Guide](https://spring.io/guides/tutorials/spring-boot-oauth2/)
 - [Open Source JJWT Library Guide](https://www.baeldung.com/java-json-web-tokens-jjwt)

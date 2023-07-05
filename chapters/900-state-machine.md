@@ -28,9 +28,9 @@ Online Shop:
 > 
 > - Create also a handler class (use @WithStateMachine and @OnTransition annotations) in which you add your custom logic for every transition (status changes and call to the corresponding order service method).
 > 
-> Adapt the Order Controller in such a way that when a post request is made for an Order, the action which needs to be performed on the Order is also specified. From the controller, instead of calling the OrderService creation method, trigger the corresponding state machine event. 
+> Adapt the Order Controller in such a way that when a post request is made for an Order, the event which needs to be performed on the Order is also specified. From the controller, instead of calling the OrderService creation method, trigger the corresponding state machine event. 
 > 
-> Note: do not forget to validate that a transition is possible for the given Order by performing the given action, spring state machine is not doing this check. 
+> Note: do not forget to validate that a transition is possible for the given Order by performing the given event, spring state machine is not doing this check. 
 > 
 > 
 
