@@ -24,7 +24,7 @@ The road-map consists of several steps. In each step, a set of theoretical conce
 
 After the learning material for a given step was sufficiently explored, either some new functionality will be added to this application or old functionality will be refactored.
 
-The application will have little-to-no user interface. Developers are expected to perform developer tests with Postman once the REST APIs are implemented.
+Developers are expected to perform developer tests with Postman once the REST APIs are implemented. The application will have a user interface, once the Spring training is completed.
 
 All the code written must be published on GitHub. Commits must be pushed when each individual chapter is finished. In order to request a code review from the trainers, you must [open a pull request](https://help.github.com/en/articles/creating-a-pull-request) from the `develop` to the `master` branch.
 
