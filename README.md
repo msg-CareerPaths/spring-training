@@ -4,7 +4,6 @@
 
  - [Working Mode](#working-mode)
  - [Environment](#environment)
- - [Time Bookings](#time-bookings)
  - [Online Shop](#online-shop)
  - [Chapters](#chapters)
    * [1. Java, Git, Maven](https://github.com/msg-CareerPaths/spring-training/blob/career-start-2023/chapters/100-java-maven.md)
