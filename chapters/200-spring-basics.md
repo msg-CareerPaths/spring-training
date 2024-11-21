@@ -16,6 +16,10 @@ Resources:
   - [What is Dependency Injection?](https://youtu.be/Eqi-hYX50MI)
   - [IoC and DI in Spring](https://youtu.be/5cRaQqQb14Q)
   - [Intro to IoC and DI in Spring](https://www.baeldung.com/inversion-control-and-dependency-injection-in-spring)
+ 
+- Debugging:
+  - [Debugging in Intellij](https://youtu.be/1bCgzjatcr4)
+  - [Debug Code](https://www.jetbrains.com/help/idea/debugging-code.html)
 
 Online Shop: *nothing to do*.
 
