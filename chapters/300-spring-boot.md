@@ -9,7 +9,7 @@ Required Reading:
 - [Introduction to Lombok](https://www.baeldung.com/intro-to-project-lombok)
 - [Introduction to PostgreSQL with pgAdmin](https://www.youtube.com/watch?v=Dd2ej-QKrWY&ab_channel=Codemy.com)
 - [PostgreSQL & pgAdmin Shorter Tutorial](https://www.youtube.com/watch?v=WFT5MaZN6g4)
-- [https://www.geeksforgeeks.org/spring-boot-integration-with-postgresql-as-a-maven-project/](https://dzone.com/articles/build-a-spring-boot-app-with-flyway-and-postgres)
+- [Build a Spring Boot App With Flyway and Postgres](https://dzone.com/articles/build-a-spring-boot-app-with-flyway-and-postgres)
 
 Online Shop:
 
