@@ -4,6 +4,7 @@ Goal: Initialize the database schema and map the tables to Java classes using JP
 
 Required Reading:
 
+- [Database migration using Flyway + Spring boot + Hibernate + SQL](https://www.youtube.com/watch?v=7uKynYx1eK0)
 - [Database migrations with Flyway](https://www.baeldung.com/database-migrations-with-flyway)
 - [JPA - Entities](https://docs.oracle.com/javaee/5/tutorial/doc/bnbqa.html)
 - [JPA - JPQL](https://www.tutorialspoint.com/jpa/jpa_jpql.htm)
@@ -12,11 +13,19 @@ Required Reading:
 
 Online Shop:
 
-> Create a data model for your application in a Flyway SQL migration. You can refine the model by adding unique indexes (e.g. supplier name) and introducing artificial PKs instead of composite ones and also add a unique index.
+> Running the application at this point, will result in an error due to missing postgreSQL database connection.
+> 
+> Setup in pgAdmin an `online-shop server` > then a `online-shop database` > and then a `online-shop schema`.
+> 
+> The `application.properties` file, inside the created Spring Boot application, should contain the database connection details. The `spring.jpa.hibernate.ddl-auto` should be set to `validate` as we are using Flyway.
+>
+> After the database connection details were set correctly, the application should start.
+>
+> Create a data model for your application in a Flyway SQL migration. You should use as a guideline the database diagram provided.
 >
 > PostgreSQL has support to UUID, so you can use it instead of commonly used auto-increment integer. UUID is helpful to avoid a normal attack in which the hacker tries to increase or decrease an entity ID to discover new information. 
 > 
-> Translate this data model into Java entity classes. Use Lombok to annotate these classes with `@Data` annotations to generate getters, setters, equals and hashCode. Hint: *it might be useful to create a base entity class (containing just the primary key) or an interface (containing the primary key getter and setter) to be able to handle entities generically later on.*
+> Translate this data model into Java entity classes. Use Lombok to annotate these classes with `@Data` annotations to generate getters, setters, equals and hashCode. Hint: *it might be useful to create a base entity class (containing just the primary key) or an interface (containing the primary key getter and setter) to be able to handle entities generically if needed.*
 >
 > Annotate all the entities with the proper JPA annotations (`@Entity`, `@OneToMany`, etc). Write Spring Data JPA repositories to allow easy access to your entities.
 
