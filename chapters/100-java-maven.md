@@ -8,6 +8,8 @@ Required Reading:
 - [Maven Intro](https://maven.apache.org/what-is-maven.html)
 - [Java 8](https://www.tutorialspoint.com/java8/index.htm)
 - [EditorConfig](https://editorconfig.org/)
+- [Writing a commit message](https://www.freecodecamp.org/news/writing-good-commit-messages-a-practical-guide/)
+- [Java Naming Convetions](https://www.javatpoint.com/java-naming-conventions)
 
 Online Shop: *nothing to do*.
 
@@ -16,4 +18,3 @@ Further Resources:
 - [GitHub - Hello World](https://guides.github.com/activities/hello-world/)
 - [Git - CLI Fundamentals](https://www.youtube.com/watch?v=HVsySz-h9r4)
 - [Maven in 5 minutes](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)
-- [Guide to Java Reflection](https://www.baeldung.com/java-reflection)
