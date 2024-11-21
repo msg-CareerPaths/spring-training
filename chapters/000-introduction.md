@@ -1,10 +1,12 @@
-## Working Mode
+## Description
 
 The road-map consists of several steps. In each step, a set of theoretical concepts are explored, supported by reference documentation, book chapters, tutorials and videos. In parallel, a simple application will be built with the learned concepts: the *Online Shop* application.
 
 After the learning material for a given step was sufficiently explored, either some new functionality will be added to this application or old functionality will be refactored.
 
 Developers are expected to perform developer tests with Postman once the REST APIs are implemented. The application will have a user interface, once the Spring training is completed.
+
+## Working Mode
 
 All code written must be published on GitHub.
 
@@ -36,3 +38,12 @@ The application will deal with the management and daily functioning of a small o
 Throughout the application, we assume that prices are always in EUR and weights are always in KG. 
 
 ![Data Model](./diagrams/careerStart-data-model.svg "Data Model")
+
+## Timeline
+
+This timeline is just for guidance, take time to understand the concepts before moving on.
+
+- **Week 1**: Chapter 1, Chapter 2, Chapter 3, Chapter 4, **Open a Pull Request**
+- **Week 2**: Chapter 5, (possibly) Chapter 6 **Open a Pull Request**
+- **Week 3**: Chapter 6 (if not finished), Chapter 7 **Open a Pull Request**
+- **Week 4**: Chapter 8 **Open a Pull Request**, **Prepare for Demo**
