@@ -1,7 +1,7 @@
 # Spring Training: Resources
 
 ## Contents
-
+ - [Description](#description)
  - [Working Mode](#working-mode)
  - [Environment](#environment)
  - [Online Shop](#online-shop)
@@ -18,13 +18,15 @@
    * [OPT-2. Java Mail](https://github.com/msg-CareerPaths/spring-training/tree/practica-de-iarna-2024/chapters/opt-700-java-mail.md)
    * [OPT-3. WebSocket](https://github.com/msg-CareerPaths/spring-training/tree/practica-de-iarna-2024/chapters/opt-800-websocket.md)
 
-## Working Mode
+## Description
 
 The road-map consists of several steps. In each step, a set of theoretical concepts are explored, supported by reference documentation, book chapters, tutorials and videos. In parallel, a simple application will be built with the learned concepts: the *Online Shop* application.
 
 After the learning material for a given step was sufficiently explored, either some new functionality will be added to this application or old functionality will be refactored.
 
 Developers are expected to perform developer tests with Postman once the REST APIs are implemented. The application will have a user interface, once the Spring training is completed.
+
+## Working Mode
 
 All code written must be published on GitHub.
 
