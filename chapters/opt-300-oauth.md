@@ -8,10 +8,11 @@ Required Reading:
 - [Authorization Server Reference](https://www.appsdeveloperblog.com/spring-authorization-server-tutorial/)
 - [Resource Server Reference](https://www.baeldung.com/spring-security-oauth-resource-server)
 - [OAuth2 JWT authentication - example](https://medium.com/swlh/stateless-jwt-authentication-with-spring-boot-a-better-approach-1f5dbae6c30f)
+- [Global CORS configuration](https://spring.io/guides/gs/rest-service-cors#global-cors-configuration)
 
 Online Shop:
 
-> Configure your application using OAuth 2.0 in order to access the endpoints securely. We will consider the Customers as the users of the application which needs to be authenticated in order to access any information. 
+> Configure your application using OAuth 2.0 in order to access the endpoints securely.
 > You will configure the application as both Authorization Server (which issues Jwt tokens) and Resource Server (which requires a valid token in order to authenticate a request). 
 > ![Security flow](https://raw.githubusercontent.com/msg-CareerPaths/spring-training/career-start-2023/diagrams/security.png "Security flow")
 > 
@@ -25,6 +26,10 @@ Online Shop:
 > Use Postman to test that you are able to issue a token by providing the correct username and password for a customer (For this you will need an endpoint for authentication which will give you the token as response)
 > Also test that your endpoints are accessible only if a valid Bearer Token was added in the header of the request. 
 >
+> The User can have one of the two roles: *Customer* or *Admin*. Some action can be performed only by an admin, such as product deletion.
+> Test that the application does not allow delete requests from customers, with Postman.
+>
+> *Hint: When the FE application will send requests to the BE application, the requests might fail due to missing CORS configuration. Check the provided resources to see how to fix this.*
 
 Further Resources:
 
