@@ -6,7 +6,7 @@ Required Reading:
 
 - [Git Basics](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
 - [Maven Intro](https://maven.apache.org/what-is-maven.html)
-- [Java 8](https://www.tutorialspoint.com/java8/index.htm)
+- [Java 17 features](https://pretius.com/blog/java-17-features/)
 - [EditorConfig](https://editorconfig.org/)
 - [Writing a commit message](https://www.freecodecamp.org/news/writing-good-commit-messages-a-practical-guide/)
 - [Java Naming Convetions](https://www.javatpoint.com/java-naming-conventions)
