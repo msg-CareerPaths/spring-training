@@ -22,6 +22,7 @@ Online Shop:
 > After the database connection details were set correctly, the application should start.
 >
 > Create a data model for your application in a Flyway SQL migration. You should use as a guideline the database diagram provided.
+>  *For the upcoming topic security, it is better to create a User table that also has a user_role field, instead of the Customer table.*
 >
 > PostgreSQL has support to UUID, so you can use it instead of commonly used auto-increment integer. UUID is helpful to avoid a normal attack in which the hacker tries to increase or decrease an entity ID to discover new information. 
 > 
