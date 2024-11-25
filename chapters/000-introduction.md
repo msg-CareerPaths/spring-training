@@ -37,9 +37,7 @@ The application will deal with the management and daily functioning of a small o
 
 Throughout the application, we assume that prices are always in EUR and weights are always in KG. 
 
-![Data Model](./diagrams/careerStart-data-model.svg "Data Model")
-
-*Create a User table that also has a user_role field, instead of the Customer table.*
+![Data Model](../diagrams/careerStart-data-model.svg "Data Model")
 
 ## Timeline
 
