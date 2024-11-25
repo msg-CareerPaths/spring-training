@@ -5,6 +5,7 @@ Goal: Getting familiar with the ecosystem around Spring. You can skip this chapt
 Required Reading:
 
 - [Git Basics](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
+- [How Git Actually Works](https://youtu.be/e9lnsKot_SQ)
 - [Maven Intro](https://maven.apache.org/what-is-maven.html)
 - [Java 17 features](https://pretius.com/blog/java-17-features/)
 - [EditorConfig](https://editorconfig.org/)
