@@ -12,11 +12,11 @@
    * [4. JPA and Flyway](https://github.com/msg-CareerPaths/spring-training/tree/practica-de-iarna-2024/chapters/400-jpa-and-flyway.md)
    * [5. JSON REST APIs](https://github.com/msg-CareerPaths/spring-training/tree/practica-de-iarna-2024/chapters/500-json-rest-apis.md)
    * [6. Strategy Design Pattern](https://github.com/msg-CareerPaths/spring-training/tree/practica-de-iarna-2024/chapters/600-strategy-design-pattern.md)
-   * [7. Testing](https://github.com/msg-CareerPaths/spring-training/tree/practica-de-iarna-2024/chapters/800-testing.md)
-   * [8. Security](https://github.com/msg-CareerPaths/spring-training/tree/practica-de-iarna-2024/chapters/opt-300-oauth.md)
-   * [OPT-1. State Machine](https://github.com/msg-CareerPaths/spring-training/tree/practica-de-iarna-2024/chapters/900-state-machine.md)
-   * [OPT-2. Java Mail](https://github.com/msg-CareerPaths/spring-training/tree/practica-de-iarna-2024/chapters/opt-700-java-mail.md)
-   * [OPT-3. WebSocket](https://github.com/msg-CareerPaths/spring-training/tree/practica-de-iarna-2024/chapters/opt-800-websocket.md)
+   * [7. Testing](https://github.com/msg-CareerPaths/spring-training/tree/practica-de-iarna-2024/chapters/700-testing.md)
+   * [8. Security](https://github.com/msg-CareerPaths/spring-training/tree/practica-de-iarna-2024/chapters/800-oauth.md)
+   * [OPT-1. Java Mail](https://github.com/msg-CareerPaths/spring-training/tree/practica-de-iarna-2024/chapters/opt-700-java-mail.md)
+   * [OPT-2. WebSocket](https://github.com/msg-CareerPaths/spring-training/tree/practica-de-iarna-2024/chapters/opt-800-websocket.md)
+   * [OPT-3. State Machine](https://github.com/msg-CareerPaths/spring-training/tree/practica-de-iarna-2024/chapters/opt-900-state-machine.md)
 
 ## Description
 
