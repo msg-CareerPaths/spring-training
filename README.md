@@ -6,26 +6,24 @@
  - [Environment](#environment)
  - [Time Bookings](#time-bookings)
  - [Online Shop](#online-shop)
- - [Chapters](#chapters)
+ - Chapters
    * [1. Java, Git, Maven](https://github.com/msg-CareerPaths/spring-training/blob/master/chapters/100-java-maven.md)
    * [2. Spring Basics](https://github.com/msg-CareerPaths/spring-training/blob/master/chapters/200-spring-basics.md)
    * [3. Spring Boot](https://github.com/msg-CareerPaths/spring-training/blob/master/chapters/300-spring-boot.md)
    * [4. JPA and Flyway](https://github.com/msg-CareerPaths/spring-training/blob/master/chapters/400-jpa-and-flyway.md)
    * [5. JSON REST APIs](https://github.com/msg-CareerPaths/spring-training/blob/master/chapters/500-json-rest-apis.md)
    * [6. Strategy Design Pattern](https://github.com/msg-CareerPaths/spring-training/blob/master/chapters/600-strategy-design-pattern.md)
-   * [7. Custom Format Support](https://github.com/msg-CareerPaths/spring-training/blob/master/chapters/700-custom-format-support.md)
-   * [8. Testing](https://github.com/msg-CareerPaths/spring-training/blob/master/chapters/800-testing.md)
-   * [9. Security](https://github.com/msg-CareerPaths/spring-training/blob/master/chapters/900-security.md)
-   * [10. REST Template](https://github.com/msg-CareerPaths/spring-training/blob/master/chapters/1000-rest-template.md)
-   * [11. Task Scheduler](https://github.com/msg-CareerPaths/spring-training/blob/master/chapters/1100-task-scheduler.md)
-   * [OPT-1. JDBC](https://github.com/msg-CareerPaths/spring-training/blob/master/chapters/op1-100-jdbc.md)
-   * [OPT-2. MongoDB](https://github.com/msg-CareerPaths/spring-training/blob/master/chapters/opt-200-mongodb.md)
-   * [OPT-3. OAuth](https://github.com/msg-CareerPaths/spring-training/blob/master/chapters/opt-300-oauth.md)
-   * [OPT-4. Olingo](https://github.com/msg-CareerPaths/spring-training/blob/master/chapters/opt-400-olingo.md)
-   * [OPT-5. MVC with Thymeleaf](https://github.com/msg-CareerPaths/spring-training/blob/master/chapters/opt-500-mvc-thymeleaf.md)
+   * [7. Testing](https://github.com/msg-CareerPaths/spring-training/blob/master/chapters/700-testing.md)
+   * [8. Security - OAuth](https://github.com/msg-CareerPaths/spring-training/blob/master/chapters/800-security-oauth.md)
+   * [OPT-1. Task Scheduler](https://github.com/msg-CareerPaths/spring-training/blob/master/chapters/opt-100-task-scheduler.md)
+   * [OPT-2. Java Mail](https://github.com/msg-CareerPaths/spring-training/blob/master/chapters/opt-200-java-mail.md)
+   * [OPT-3. State Machine](https://github.com/msg-CareerPaths/spring-training/blob/master/chapters/opt-300-state-machine.md)
+   * [OPT-4. Custom Format Support](https://github.com/msg-CareerPaths/spring-training/blob/master/chapters/opt-400-custom-format-support.md)
+   * [OPT-5. WebSocket](https://github.com/msg-CareerPaths/spring-training/blob/master/chapters/opt-500-websocket.md)
    * [OPT-6. RabbitMQ](https://github.com/msg-CareerPaths/spring-training/blob/master/chapters/opt-600-rabbitmq.md)
-   * [OPT-7. Java Mail](https://github.com/msg-CareerPaths/spring-training/blob/master/chapters/opt-700-java-mail.md)
-   * [OPT-8. WebSocket](https://github.com/msg-CareerPaths/spring-training/blob/master/chapters/opt-800-websocket.md)
+   * [OPT-7. JDBC](https://github.com/msg-CareerPaths/spring-training/blob/master/chapters/opt-700-jdbc.md)
+   * [OPT-8. MongoDB](https://github.com/msg-CareerPaths/spring-training/blob/master/chapters/opt-800-mongodb.md)
+   * [OPT-9. Security Basics](https://github.com/msg-CareerPaths/spring-training/blob/master/chapters/opt-900-security-basics.md)
 
 ## Working Mode
 
@@ -45,7 +43,9 @@ For doing static code quality checks, two separate mechanisms will be used:
 
 You can work using your local environment:
  - You need to install [Postman](https://www.getpostman.com/apps), [IntelliJ IDEA (Community)](https://www.jetbrains.com/idea/download/#section=windows), SonarLint and Lombok [plugins for IntelliJ](https://www.jetbrains.com/help/idea/managing-plugins.html#install_plugin_from_repo). Note: the newer versions of Intellij already have the Lombok installed. Please check it before trying to install it.
- - If Maven does not work because of SSL errors, [setup the Zscaler certificate in your trust store](https://team.msg.de/site/IT/Freigegebene%20Dokumente/Forms/AllItems.aspx?RootFolder=%2Fsite%2FIT%2FFreigegebene%20Dokumente%2FAnleitungen%2FZscaler&FolderCTID=0x012000581B900D5D91664C93095DB345EDAFC4&View=%7B8F4AC536%2DBC7A%2D4D89%2DA598%2D491A539B7BBE%7D).
+ - You will also need [PostgreSQL](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads).
+ - Install also [pgAdmin](https://www.sqlshack.com/an-overview-of-pgadmin-postgresql-management-tool/) on your computer which will provide you a way to query and manage your database.
+ - If Maven or anything else does not work because of SSL errors, ask the mentors or coordinators for the Zscaler setup guide (you may need to follow _3.2.1 Java section_, _3.2.3 Intellij_ and _3.3 Git_ from this guide).
 
 ## Time Bookings
 
@@ -69,4 +69,4 @@ The application will deal with the management and daily functioning of a small o
 
 Throughout the application, we assume that prices are always in EUR and weights are always in KG. 
 
-![Data Model](./diagrams/data-model.svg "Data Model")
+![Data Model](./diagrams/careerStart-data-model.svg "Data Model")
