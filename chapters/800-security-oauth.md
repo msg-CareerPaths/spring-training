@@ -8,6 +8,7 @@ Required Reading:
 - [Authorization Server Reference](https://www.appsdeveloperblog.com/spring-authorization-server-tutorial/)
 - [Resource Server Reference](https://www.baeldung.com/spring-security-oauth-resource-server)
 - [OAuth2 JWT authentication - example](https://medium.com/swlh/stateless-jwt-authentication-with-spring-boot-a-better-approach-1f5dbae6c30f)
+- [Global CORS configuration](https://spring.io/guides/gs/rest-service-cors#global-cors-configuration)
 
 Online Shop:
 
@@ -25,6 +26,10 @@ Online Shop:
 > Use Postman to test that you are able to issue a token by providing the correct username and password for a customer (For this you will need an endpoint for authentication which will give you the token as response)
 > Also test that your endpoints are accessible only if a valid Bearer Token was added in the header of the request. 
 >
+> The User can have one of the two roles: *Customer* or *Admin*. Some action can be performed only by an admin, such as product deletion.
+> Test that the application does not allow delete requests from customers, with Postman.
+>
+> *Hint: When the FE application will send requests to the BE application, the requests might fail due to missing CORS configuration. Check the provided resources to see how to fix this.*
 
 Further Resources:
 
