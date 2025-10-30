@@ -38,5 +38,5 @@ Further Resources:
 - [Self-Contained Testing Using TestContainer with PostgreSQL](https://www.baeldung.com/spring-boot-testcontainers-integration-test)
 - [Test Pyramid](https://martinfowler.com/bliki/TestPyramid.html)
 - [Spring Boot Testing Reference](https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/html/boot-features-testing.html)
-- [Writing Tests in Postman](https://blog.getpostman.com/2017/10/25/writing-tests-in-postman/)
+- [Writing Tests in Postman](https://blog.getpostman.com/2017/10/25/writing-tests-in-postman)
 - [Postman Scripts Reference](https://learning.getpostman.com/docs/postman/scripts/intro_to_scripts)

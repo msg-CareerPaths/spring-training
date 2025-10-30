@@ -11,15 +11,12 @@ Required Reading:
 
 Online Shop:
 
-> Register an account on GitHub with the msg email and create a new GitHub repository for the Spring Training. Clone this repository locally and create a feature branch from the main branch before starting to work. During the course of the training, you will commit and push your work on this branch.
->
 > Go to "Spring Initializr" and generate a new project:
 > - Group: `ro.msg.learning`,
 > - Artifact: `shop`,
 > - Dependencies: `Web`, `JPA`, `Flyway`, `PostgreSQL Driver`, `Lombok`.
 >
 > Extract the generated `zip` file into the previously cloned repository. Import this project into your IDE. You can delete the `mvnw`, `mvnw.cmd` and `.mvn` files / folders as you have Maven in the IDE anyway.
->
 
 Further Resources:
 - [Spring Boot Reference](https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/html/index.html) - Parts I and II

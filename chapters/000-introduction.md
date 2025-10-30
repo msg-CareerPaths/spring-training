@@ -69,20 +69,20 @@ First steps:
 - Download the certificate offered by the company.
 - Save the certificate in `C:\zscaler.crt`.
 
-### IntelliJ Issues
+#### IntelliJ Issues
 - Go to `File → Settings` in your IDE.
 - Search for `Proxy` in the search bar.
     - Turn on `Auto-detect proxy settings`.
 - Now search for `Server Certificates`.
     - Press the `+` icon in the `Accepted Certificates` section and add the ZScaler certificate.
 
-### Git Issues
+#### Git Issues
 - Go to `C:\Users\<your_username>\AppData\Local\Programs\Git\mingw64\ssl\certs` and open `ca-bundle.crt` in Notepad.
 - Open `zscaler.crt` in a parallel Notepad instance.
 - **Copy** the content from `zscaler.crt` to the bottom of the `ca-bundle.crt` file (leave an empty space after the previous certificate).
 - You can make `Git` trust the Windows certificate store by running the following command in a terminal instance: `git config --global http.sslBackend schannel`.
 
-### Java Issues
+####  Java Issues
 - Copy `zscaler.crt` to the same directory where the `cacerts` file is located, e.g., `C:\Program Files\Java\jdk-21.0.9\lib\security`.
 - Run Command Prompt as administrator and change directory to the `cacerts` folder.
 - Run `keytool -keystore cacerts -importcert -alias zscaler_root_ca -file zscaler.crt`.

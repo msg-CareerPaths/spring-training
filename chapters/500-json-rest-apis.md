@@ -25,9 +25,10 @@ Online Shop:
 > - You get a single java object as input. This object will contain the order timestamp, the delivery address and a list of products (product ID and quantity) contained in the order.
 > - You return an Order entity if the operation was successful. If not, you throw an exception.
 > - The Service has to determine from which locations should the products be taken. For this Chapter the Service will find a **Single location** that has all the required products (with the required quantities) in stock. If there are more such locations, simply take the first one based on the ID.
-> - The stocks needs to be updated by subtracting the shipped goods.
+> - The stocks need to be updated by subtracting the shipped goods.
 > - Afterwards the order is persisted in the database and returned.
-> - Create a Rest Controller for the "Create order" operation, which should have a `POST` mapping accepting a JSON request body and producing a JSON response body.
+>
+> Create a REST Controller for the "Create order" operation, which should have a `POST` mapping accepting a JSON request body and producing a JSON response body.
 >
 > The project should respect the following structure:
 > ```

@@ -13,22 +13,21 @@ Required Reading:
 
 Online Shop:
 
-> Running the application at this point, will result in an error due to missing postgreSQL database connection.
+> Running the application at this point will result in an error due to missing PostgreSQL database connection.
 > 
-> Setup in pgAdmin an `online-shop server` > then a `online-shop database` > and then a `online-shop schema`.
+> Setup in pgAdmin an `online-shop server` > then an `online-shop database` > and then an `online-shop schema`.
 > 
 > The `application.properties` file, inside the created Spring Boot application, should contain the database connection details. The `spring.jpa.hibernate.ddl-auto` should be set to `validate` as we are using Flyway.
 >
 > After the database connection details were set correctly, the application should start.
 >
 > Create a data model for your application in a Flyway SQL migration. You should use as a guideline the database diagram provided.
->  *For the upcoming topic security, it is better to create a User table that also has a user_role field, instead of the Customer table.*
 >
-> PostgreSQL has support to UUID, so you can use it instead of commonly used auto-increment integer. UUID is helpful to avoid a normal attack in which the hacker tries to increase or decrease an entity ID to discover new information. 
+> PostgreSQL has support for UUID data type, so you can use it instead of commonly used auto-increment integer. UUID is helpful to avoid a normal attack in which the hacker tries to increase or decrease an entity ID to discover new information. 
 > 
-> Translate this data model into Java entity classes. Use Lombok to annotate these classes with `@Data` annotations to generate getters, setters, equals and hashCode. Hint: *it might be useful to create a base entity class (containing just the primary key) or an interface (containing the primary key getter and setter) to be able to handle entities generically if needed.*
+> Translate this data model into Java entity classes. Use Lombok to annotate these classes with annotations to generate getters, setters, equals and hashCode. Hint: *it might be useful to create a base entity class (containing just the primary key) or an interface (containing the primary key getter and setter) to be able to handle entities generically if needed.*
 >
-> Annotate all the entities with the proper JPA annotations (`@Entity`, `@OneToMany`, etc). Write Spring Data JPA repositories to allow easy access to your entities.
+> Annotate all the entities with the proper JPA annotations (`@Entity`, `@OneToMany`, etc.). Write Spring Data JPA repositories to allow easy access to your entities.
 
 Further Resources:
 - [Spring Data Reference](https://docs.spring.io/spring-data/jpa/docs/2.1.6.RELEASE/reference/html/)

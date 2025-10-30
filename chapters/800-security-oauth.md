@@ -1,4 +1,4 @@
-## 8. Security
+## 8. Security - OAuth
 
 Goal: Secure your application with OAuth2 (JWT Token)
 
@@ -14,7 +14,7 @@ Online Shop:
 
 > Configure your application using OAuth 2.0 in order to access the endpoints securely. We will consider the Customers as the users of the application which needs to be authenticated in order to access any information. 
 > You will configure the application as both Authorization Server (which issues Jwt tokens) and Resource Server (which requires a valid token in order to authenticate a request). 
-> ![Security flow](https://raw.githubusercontent.com/msg-CareerPaths/spring-training/career-start-2023/diagrams/security.png "Security flow")
+> ![Security flow](https://raw.githubusercontent.com/msg-CareerPaths/spring-training/bootcamp-2025/diagrams/security.png "Security flow")
 > 
 > Create a **JwtUtil** class which will handle the creation and the validation of the tokens. 
 > This class will have a method to generate a Jwt token from an Authentication object (which contains the credentials of the customer). Note: you can use the Open Source JJWT library (https://github.com/jwtk/jjwt).
@@ -26,10 +26,10 @@ Online Shop:
 > Use Postman to test that you are able to issue a token by providing the correct username and password for a customer (For this you will need an endpoint for authentication which will give you the token as response)
 > Also test that your endpoints are accessible only if a valid Bearer Token was added in the header of the request. 
 >
-> The User can have one of the two roles: *Customer* or *Admin*. Some action can be performed only by an admin, such as product deletion.
-> Test that the application does not allow delete requests from customers, with Postman.
+> The User can have one of the two roles: *CUSTOMER* or *ADMIN*. Some action can be performed only by an admin, such as order deletion.
+> Test that the application does not allow DELETE requests from customers, with Postman.
 >
-> *Hint: When the FE application will send requests to the BE application, the requests might fail due to missing CORS configuration. Check the provided resources to see how to fix this.*
+> *Hint: Keep in mind that later, when you will call the implemented API via the frontend application while working on the React/Angular training, the requests will fail due to missing CORS configuration. Check the provided resources to see how to fix this.*
 
 Further Resources:
 
