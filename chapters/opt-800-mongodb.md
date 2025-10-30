@@ -1,4 +1,4 @@
-### OPT-2. MongoDB
+### OPT-8. MongoDB
 
 Goal: Store unstructured data in a NoSQL database.
 
