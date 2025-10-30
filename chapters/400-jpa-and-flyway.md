@@ -4,12 +4,12 @@ Goal: Initialize the database schema and map the tables to Java classes using JP
 
 Required Reading:
 
-- [Database migration using Flyway + Spring boot + Hibernate + SQL](https://www.youtube.com/watch?v=7uKynYx1eK0)
-- [Database Initialization](https://docs.spring.io/spring-boot/docs/2.0.0.M6/reference/html/howto-database-initialization.html#:~:text=ddl-auto%20explicitly%20and%20the,none%20in%20all%20other%20cases)
-- [JPA - Entities](https://docs.oracle.com/javaee/5/tutorial/doc/bnbqa.html)
-- [JPA - JPQL](https://www.tutorialspoint.com/jpa/jpa_jpql.htm)
+- [Database migration using Flyway + Spring Boot + Hibernate + SQL](https://www.youtube.com/watch?v=7uKynYx1eK0)
+- [Database initialization](https://docs.spring.io/spring-boot/docs/3.3.0-M2/reference/html/howto.html#howto.data-initialization)
+- [Jakarta Persistence (JPA)](https://jakarta.ee/learn/docs/jakartaee-tutorial/current/persist/persistence-intro/persistence-intro.html)
+- [JPA - JPQL](https://docs.jboss.org/hibernate/orm/6.4/userguide/html_single/Hibernate_User_Guide.html)
 - [Introduction to Spring Data JPA](https://www.baeldung.com/the-persistence-layer-with-spring-data-jpa)
-- [Spring Boot Application with Flyway and PostgreSQL](https://dzone.com/articles/build-a-spring-boot-app-with-flyway-and-postgres)
+- [Spring Boot Application with Flyway and PostgreSQL](https://blog.jetbrains.com/idea/2024/11/how-to-use-flyway-for-database-migrations-in-spring-boot-applications/)
 
 Online Shop:
 
@@ -30,6 +30,6 @@ Online Shop:
 > Annotate all the entities with the proper JPA annotations (`@Entity`, `@OneToMany`, etc.). Write Spring Data JPA repositories to allow easy access to your entities.
 
 Further Resources:
-- [Spring Data Reference](https://docs.spring.io/spring-data/jpa/docs/2.1.6.RELEASE/reference/html/)
-- [Spring Database Initialization](https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/html/howto-database-initialization.html#howto-execute-flyway-database-migrations-on-startup)
+- [Spring Data Reference](https://docs.spring.io/spring-data/jpa/reference/jpa.html)
+- [Spring Database Initialization](https://docs.spring.io/spring-boot/how-to/data-initialization.html#howto.data-initialization.migration-tool.flyway)
 - [Spring in Action](https://1drv.ms/b/s!AiBPL7npTofshY5PJim4M5RiiOyu7w) - Part 1, Chapter 3.2

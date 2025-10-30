@@ -19,6 +19,6 @@ Online Shop:
 Further Resources:
 
 - [SQL Examples](https://github.com/msg-CareerPaths/spring-training/blob/bootcamp-2025/documents/find-row-with-max-sql.pdf)
-- [ConditionalOnProperty](https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/api/org/springframework/boot/autoconfigure/condition/ConditionalOnProperty.html)
+- [ConditionalOnProperty](https://docs.spring.io/spring-boot/api/java/org/springframework/boot/autoconfigure/condition/ConditionalOnProperty.html)
 - [Strategy Design Pattern](https://www.youtube.com/watch?v=v9ejT8FO-7I&t=991s)
 - [@Value annotation](https://www.youtube.com/watch?v=vLSyFktOm4g&ab_channel=DanVega)
