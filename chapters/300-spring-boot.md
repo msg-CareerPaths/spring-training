@@ -7,12 +7,11 @@ Required Reading:
 - [Building an Application with Spring Boot](https://spring.io/guides/gs/spring-boot/)
 - [Configuration Properties](https://www.baeldung.com/configuration-properties-in-spring-boot)
 - [Introduction to Lombok](https://www.baeldung.com/intro-to-project-lombok)
-- [Introduction to PostgreSQL with pgAdmin](https://www.youtube.com/watch?v=Dd2ej-QKrWY&ab_channel=Codemy.com)
-- [PostgreSQL & pgAdmin Shorter Tutorial](https://www.youtube.com/watch?v=WFT5MaZN6g4)
+- [Introduction to PostgreSQL with pgAdmin](https://www.geeksforgeeks.org/spring-boot-integration-with-postgresql-as-a-maven-project)
 
 Online Shop:
 
-> Create a new GitHub repository for Spring Training. Clone this repository locally and create a feature branch from the master branch before starting to work. During the course of the training, you will commit and push your work on feature branches.
+> Register an account on GitHub with the msg email and create a new GitHub repository for the Spring Training. Clone this repository locally and create a feature branch from the main branch before starting to work. During the course of the training, you will commit and push your work on this branch.
 >
 > Go to "Spring Initializr" and generate a new project:
 > - Group: `ro.msg.learning`,

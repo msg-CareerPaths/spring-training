@@ -15,7 +15,6 @@ Online Shop:
 > - Get, create, update, delete products.
 > - Location strategies.
 >
->
 > Create a `test` Spring profile which uses a special TestContainer for running the integration tests. This container will create the database schema at each test run (this simulates the in-memory database).
 >
 > Implement integration tests which use this profile and thus use the TestContainer for the following functionalities:

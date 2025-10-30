@@ -4,7 +4,7 @@ The road-map consists of several steps. In each step, a set of theoretical conce
 
 After the learning material for a given step was sufficiently explored, either some new functionality will be added to this application or old functionality will be refactored.
 
-Developers are expected to perform developer tests with Postman once the REST APIs are implemented. The application will have a user interface, once the Spring training is completed.
+The application will have little-to-no user interface. Developers are expected to perform developer tests with Postman once the REST APIs are implemented.
 
 ## Working Mode
 
@@ -37,7 +37,7 @@ The application will deal with the management and daily functioning of a small o
 
 Throughout the application, we assume that prices are always in EUR and weights are always in KG. 
 
-![Data Model](../diagrams/careerStart-data-model.svg "Data Model")
+![Data Model](https://raw.githubusercontent.com/msg-CareerPaths/spring-training/master/diagrams/careerStart-data-model.svg "Data Model")
 
 ## Timeline
 

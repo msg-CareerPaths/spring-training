@@ -2,6 +2,10 @@
 
 Goal: Getting familiar with the ecosystem around Spring. You can skip this chapter if you have already worked with Java, Git and Maven before.
 
+Videos:
+
+- [Git Introduction](https://youtu.be/HkdAHXoRtos)
+
 Required Reading:
 
 - [Git Basics](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
