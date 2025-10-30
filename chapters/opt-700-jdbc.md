@@ -1,4 +1,4 @@
-### OPT-7. JDBC
+## OPT-7. JDBC
 
 Goal: Implement repositories manually and become familiar with JDBC.
 

@@ -1,4 +1,4 @@
-### 5. JSON REST APIs
+## 5. JSON REST APIs
 
 Goal: Group business logic into service classes and expose this logic through REST interfaces. Test the endpoints created with Postman.
 

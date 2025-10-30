@@ -1,4 +1,4 @@
-### 2. Spring Basics
+## 2. Spring Basics
 
 Goal: Understand dependency injection and how it is realized with Spring.
 

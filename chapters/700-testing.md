@@ -1,4 +1,4 @@
-### 7. Testing
+## 7. Testing
 
 Goal: Perform tests of the following types: unit tests, integration tests and API tests.
 

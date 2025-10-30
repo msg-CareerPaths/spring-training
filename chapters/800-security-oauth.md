@@ -1,4 +1,4 @@
-### 8. Security
+## 8. Security
 
 Goal: Secure your application with OAuth2 (JWT Token)
 

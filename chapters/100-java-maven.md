@@ -1,4 +1,4 @@
-### 1. Java, Git, Maven
+## 1. Java, Git, Maven
 
 Goal: Getting familiar with the ecosystem around Spring. You can skip this chapter if you have already worked with Java, Git and Maven before.
 

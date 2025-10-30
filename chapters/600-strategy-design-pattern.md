@@ -1,4 +1,4 @@
-### 6. Strategy Design Pattern
+## 6. Strategy Design Pattern
 
 Goal: Apply Strategy Design Pattern for Order Creation operation.
 

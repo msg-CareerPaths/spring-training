@@ -1,4 +1,4 @@
-### OPT-1. Task Scheduler
+## OPT-1. Task Scheduler
 
 Goal: Schedule a simple task to run periodically.
 

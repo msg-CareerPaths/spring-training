@@ -1,4 +1,4 @@
-### 3. Spring Boot
+## 3. Spring Boot
 
 Goal: Generate a new project and be able to use the out-of-the-box Spring Boot features.
 

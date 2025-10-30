@@ -1,4 +1,4 @@
-### 4. JPA and Flyway
+## 4. JPA and Flyway
 
 Goal: Initialize the database schema and map the tables to Java classes using JPA.
 
