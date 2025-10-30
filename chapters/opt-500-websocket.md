@@ -1,4 +1,4 @@
-### OPT-2. WebSocket
+### OPT-5. WebSocket
 
 Goal: Publish events though WebSocket to allow potential user interfaces to automatically update their displayed data.
 

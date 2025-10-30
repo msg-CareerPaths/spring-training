@@ -1,4 +1,4 @@
-### 9. Security
+### OPT-9. Security Basics
 
 Goal: Secure your application with HTTP Basic Authentication and Form Based Authentication.
 

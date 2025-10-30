@@ -1,4 +1,4 @@
-### 9. State Machine
+### OPT-3. State Machine
 
 Goal: Perform migration of a database table by adding a new column and create a state machine.  
 
