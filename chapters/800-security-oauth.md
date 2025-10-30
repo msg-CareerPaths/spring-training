@@ -6,9 +6,10 @@ Required Reading:
 
 - [The Simplest Guide to OAuth 2.0](https://medium.com/@darutk/the-simplest-guide-to-oauth-2-0-8c71bd9a15bb)
 - [Authorization Server Reference](https://www.appsdeveloperblog.com/spring-authorization-server-tutorial/)
+- [Spring Security OAuth 2.0 Resource Server](https://docs.spring.io/spring-security/reference/servlet/oauth2/resource-server/index.html)
+- [OAuth2 JWT authentication - example](https://dev.to/pryhmez/implementing-spring-security-6-with-spring-boot-3-a-guide-to-oauth-and-jwt-with-nimbus-for-authentication-2lhf)
 - [Resource Server Reference](https://www.baeldung.com/spring-security-oauth-resource-server)
-- [OAuth2 JWT authentication - example](https://medium.com/swlh/stateless-jwt-authentication-with-spring-boot-a-better-approach-1f5dbae6c30f)
-- [Global CORS configuration](https://spring.io/guides/gs/rest-service-cors#global-cors-configuration)
+- [Global CORS configuration](https://docs.spring.io/spring-framework/reference/web/webmvc-cors.html#mvc-cors-global)
 
 Online Shop:
 
@@ -23,17 +24,18 @@ Online Shop:
 > 
 > Add also a configuration class in which the SecurityFilterChain Bean is defined as a method in which the http is configured to authorize the requests using jwt tokens from OAuth2. The Configuration class needs also to enable WebSecurity and MethodSecurity.
 > 
-> Use Postman to test that you are able to issue a token by providing the correct username and password for a customer (For this you will need an endpoint for authentication which will give you the token as response)
+> Use Postman to test that you are able to issue a token by providing the correct username and password for a customer (For this you will need an endpoint for authentication which will give you the token as response).
 > Also test that your endpoints are accessible only if a valid Bearer Token was added in the header of the request. 
 >
 > The User can have one of the two roles: *CUSTOMER* or *ADMIN*. Some action can be performed only by an admin, such as order deletion.
 > Test that the application does not allow DELETE requests from customers, with Postman.
 >
-> *Hint: Keep in mind that later, when you will call the implemented API via the frontend application while working on the React/Angular training, the requests will fail due to missing CORS configuration. Check the provided resources to see how to fix this.*
+> *Hint: Keep in mind that later, when you will call the implemented API via the frontend while working on the React/Angular training, the requests will fail due to missing CORS configuration. Check the provided resources to see how to fix this.*
 
 Further Resources:
 
-- [Spring OAuth 2 Developers Guide](https://developer.okta.com/blog/2019/03/12/oauth2-spring-security-guide)
-- [Spring SSO vs Resource Server](https://www.baeldung.com/spring-security-oauth2-enable-resource-server-vs-enable-oauth2-sso)
+- [Spring Security Reference](https://docs.spring.io/spring-security/reference/index.html)
 - [Spring Boot OAuth 2 Guide](https://spring.io/guides/tutorials/spring-boot-oauth2/)
+- [Migrate Application from Spring Security 5 to Spring Security 6](https://www.baeldung.com/spring-security-migrate-5-to-6)
 - [Open Source JJWT Library Guide](https://www.baeldung.com/java-json-web-tokens-jjwt)
+- [JWT essentials (RFC 7519)](https://www.rfc-editor.org/rfc/rfc7519)
