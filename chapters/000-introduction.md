@@ -50,10 +50,9 @@ Throughout the application, we assume that prices are always in euros (EUR) and 
 
 This timeline is just for guidance, take time to understand the concepts before moving on.
 
-- **Week 1**: Chapter 1, Chapter 2, Chapter 3, Chapter 4, **Open a Pull Request**
-- **Week 2**: Chapter 5, (possibly) Chapter 6 **Open a Pull Request**
-- **Week 3**: Chapter 6 (if not finished), Chapter 7 **Open a Pull Request**
-- **Week 4**: Chapter 8 **Open a Pull Request**, **Prepare for Demo**
+- **Week 1**: Chapter 1, Chapter 2, Chapter 3, Chapter 4 **Open a Pull Request**
+- **Week 2**: Chapter 5, Chapter 6 **Open a Pull Request**
+- **Week 3**: Chapter 7, Chapter 8 **Open a Pull Request**
 
 ### Notes
 
