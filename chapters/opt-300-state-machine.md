@@ -1,4 +1,4 @@
-### OPT-3. State Machine
+## OPT-3. State Machine
 
 Goal: Perform migration of a database table by adding a new column and create a state machine.  
 
@@ -24,7 +24,7 @@ Online Shop:
 >
 > - Create a StateMachineConfig class in which you will define the following order statuses transitions:
 >
->   ![State Machine](https://raw.githubusercontent.com/msg-CareerPaths/spring-training/career-start-2023/diagrams/stateMachine.png "State Machine")
+>   ![State Machine](https://raw.githubusercontent.com/msg-CareerPaths/spring-training/bootcamp-2025/diagrams/state-machine.png "State Machine")
 > 
 > - Create also a handler class (use @WithStateMachine and @OnTransition annotations) in which you add your custom logic for every transition (status changes and call to the corresponding order service method).
 > 
