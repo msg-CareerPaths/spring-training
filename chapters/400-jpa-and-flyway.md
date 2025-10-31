@@ -25,7 +25,8 @@ Online Shop:
 >
 > PostgreSQL has support for UUID data type, so you can use it instead of commonly used auto-increment integer. UUID is helpful to avoid a normal attack in which the hacker tries to increase or decrease an entity ID to discover new information. 
 > 
-> Translate this data model into Java entity classes. Use Lombok to annotate these classes with annotations to generate getters, setters, equals and hashCode. Hint: *it might be useful to create a base entity class (containing just the primary key) or an interface (containing the primary key getter and setter) to be able to handle entities generically if needed.*
+> Translate this data model into Java entity classes. Use Lombok to annotate these classes to generate getters, setters, or other required functions.
+> Hint: *it might be useful to create a base entity class (containing just the primary key) or an interface (containing the primary key getter and setter) to be able to handle entities generically if needed.*
 >
 > Annotate all the entities with the proper JPA annotations (`@Entity`, `@OneToMany`, etc.). Write Spring Data JPA repositories to allow easy access to your entities.
 

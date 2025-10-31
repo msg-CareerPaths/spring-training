@@ -12,13 +12,13 @@ The application will have little-to-no user interface. Developers are expected t
 
 All code written must be published on GitHub.
 
-- Register an account on GitHub and accept the training [GitHub Classroom Assignment](https://classroom.github.com/a/qiaU7uWM). This will create a new GitHub repository for you. Clone this repository locally.
-- **Before starting work**, [create](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository) a `develop` branch from the `master` branch.
+- Create a new GitHub repository for the Spring Training. Clone this repository locally.
+- **Before starting work**, [create](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository) a `develop` branch from the `main` branch.
 - Implement the online-shop requirements from that chapter. Commit messages should be suggestive of the changes made.
-- **In order to request a code review from the mentors**, you must [open a pull request](https://help.github.com/en/articles/creating-a-pull-request) (PR) from the `develop` to the `master` branch. Notify the mentors about the PR.
-- **Once the Pull Request is approved** by the mentors, merge it into the `master` branch.
-- Ensure your local `master` branch is up-to-date by pulling the latest changes (git pull).
-- Create a new branch from `master` or continue your work on the `develop` branch. Open a Pull Request when you want to request another code review and merge it into `master` after it is approved.
+- **In order to request a code review from the mentors**, you must [open a pull request](https://help.github.com/en/articles/creating-a-pull-request) (PR) from the `develop` to the `main` branch. Notify the mentors about the PR.
+- **Once the Pull Request is approved** by the mentors, merge it into the `main` branch.
+- Ensure your local `main` branch is up-to-date by pulling the latest changes (git pull).
+- Create a new branch from `main` or continue your work on the `develop` branch. Open a Pull Request when you want to request another code review and merge it into `main` after it is approved.
 - Repeat as necessary until the training has ended.
 
 ### Environment Setup
@@ -32,9 +32,9 @@ You need to install:
     - **Do not forget your username and password**
 - [pgAdmin](https://www.sqlshack.com/an-overview-of-pgadmin-postgresql-management-tool/) which will provide you a way to query and manage your database.
 
-For doing static code quality checks, two separate mechanisms will be used:
+For doing static code quality checks, two separate mechanisms can be used:
 - SonarQube for IDE and the built-in code analysis must be used to fix code issues.
-- [Codacy](https://www.codacy.com/) will be enabled and developers should check the detected issues periodically.
+- [Codacy](https://www.codacy.com/) _(optional)_
 
 ### Online Shop
 
