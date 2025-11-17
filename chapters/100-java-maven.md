@@ -14,7 +14,7 @@ Required Materials:
 - [Java 17 features](https://pretius.com/blog/java-17-features/)
 - [EditorConfig](https://editorconfig.org/)
 - [Writing a commit message](https://www.freecodecamp.org/news/writing-good-commit-messages-a-practical-guide/)
-- [Java Naming Conventions](https://www.javatpoint.com/java-naming-conventions)
+- [Java Naming Conventions](https://www.baeldung.com/java-naming-conventions)
 
 Online Shop: *nothing to do*.
 
