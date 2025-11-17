@@ -10,21 +10,21 @@ Required Reading:
 
 Online Shop:
 
-> - Add a new property for an Order:
+> - Add a new property for an order:
 >
->   - status -> represents the status of the Order
+>   - status -> represents the status of the order
 >             
->               NEW -> every Order which is not saved yet
+>               NEW -> every order which is not saved yet
 >               SAVED -> saved but editable (add/remove products, change delivery address etc.)
 >               PLACED -> not editable anymore (waiting for delivery)
 >               CANCELED -> not valid anymore (will not be delivered)
-> - You will need to create a flyway script to add the new column for status in Order database table.
+> - You will need to create a Flyway script to add the new column for status in the Order database table.
 > 
 > - Enhance the OrderService with an update method. 
 >
 > - Create a StateMachineConfig class in which you will define the following order statuses transitions:
 >
->   ![State Machine](https://raw.githubusercontent.com/msg-CareerPaths/spring-training/bootcamp-2025/diagrams/state-machine.png "State Machine")
+>   ![State Machine](https://raw.githubusercontent.com/msg-CareerPaths/spring-training/master/diagrams/state-machine.png "State Machine")
 > 
 > - Create also a handler class (use @WithStateMachine and @OnTransition annotations) in which you add your custom logic for every transition (status changes and call to the corresponding order service method).
 > 

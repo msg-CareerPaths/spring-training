@@ -44,7 +44,7 @@ The application will deal with the management and daily functioning of a small o
 
 Throughout the application, we assume that prices are always in euros (EUR) and weights are always in kilograms (KG).
 
-![Data Model](https://raw.githubusercontent.com/msg-CareerPaths/spring-training/bootcamp-2025/diagrams/data-model.svg "Data Model")
+![Data Model](https://raw.githubusercontent.com/msg-CareerPaths/spring-training/master/diagrams/data-model.svg "Data Model")
 
 ### Timeline
 

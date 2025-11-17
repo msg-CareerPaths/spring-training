@@ -4,7 +4,7 @@ Goal: Apply Strategy Design Pattern for Order Creation operation.
 
 Required Reading:
 
-- [Order Strategies](https://github.com/msg-CareerPaths/spring-training/blob/bootcamp-2025/documents/order-strategies.md)
+- [Order Strategies](https://github.com/msg-CareerPaths/spring-training/blob/master/documents/order-strategies.md)
 - [Strategy Design Pattern](https://en.wikipedia.org/wiki/Strategy_pattern)
 - [Spring @Value annotation](https://www.baeldung.com/spring-value-annotation)
 
@@ -18,7 +18,7 @@ Online Shop:
 
 Further Resources:
 
-- [SQL Examples](https://github.com/msg-CareerPaths/spring-training/blob/bootcamp-2025/documents/find-row-with-max-sql.pdf)
+- [SQL Examples](https://github.com/msg-CareerPaths/spring-training/blob/master/documents/find-row-with-max-sql.pdf)
 - [ConditionalOnProperty](https://docs.spring.io/spring-boot/api/java/org/springframework/boot/autoconfigure/condition/ConditionalOnProperty.html)
 - [Strategy Design Pattern](https://www.youtube.com/watch?v=v9ejT8FO-7I&t=991s)
 - [@Value annotation](https://www.youtube.com/watch?v=vLSyFktOm4g&ab_channel=DanVega)

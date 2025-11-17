@@ -15,7 +15,7 @@ Online Shop:
 
 > Configure your application using OAuth 2.0 in order to access the endpoints securely. We will consider the Customers as the users of the application which needs to be authenticated in order to access any information. 
 > You will configure the application as both Authorization Server (which issues Jwt tokens) and Resource Server (which requires a valid token in order to authenticate a request). 
-> ![Security flow](https://raw.githubusercontent.com/msg-CareerPaths/spring-training/bootcamp-2025/diagrams/security.png "Security flow")
+> ![Security flow](https://raw.githubusercontent.com/msg-CareerPaths/spring-training/master/diagrams/security.png "Security flow")
 > 
 > Create a **JwtUtil** class which will handle the creation and the validation of the tokens. 
 > This class will have a method to generate a Jwt token from an Authentication object (which contains the credentials of the customer). Note: you can use the Open Source JJWT library (https://github.com/jwtk/jjwt).
