@@ -11,7 +11,7 @@ Required Materials:
 
 - [Git Basics](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
 - [Maven Introduction](https://maven.apache.org/what-is-maven.html)
-- [Java 17 features](https://pretius.com/blog/java-17-features/)
+- [Java 21 features](https://www.geeksforgeeks.org/java/java-jdk-21-new-features-of-java-21)
 - [EditorConfig](https://editorconfig.org/)
 - [Writing a commit message](https://www.freecodecamp.org/news/writing-good-commit-messages-a-practical-guide/)
 - [Java Naming Conventions](https://www.baeldung.com/java-naming-conventions)

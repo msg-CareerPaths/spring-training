@@ -27,5 +27,5 @@ Further Resources:
 
 - [Spring in Action](https://1drv.ms/b/s!AiBPL7npTofshY5PJim4M5RiiOyu7w) - Part 1, Chapter 1
 - [What is Spring all about?](https://www.youtube.com/watch?v=gq4S-ovWVlM)
-- [Spring Reference - Overview](https://docs.spring.io/spring/docs/5.1.6.RELEASE/spring-framework-reference/overview.html#overview)
-- [Spring Reference - Core](https://docs.spring.io/spring/docs/5.1.6.RELEASE/spring-framework-reference/core.html#spring-core) - Chapters 1 to 4
+- [Spring Reference - Overview](https://docs.spring.io/spring-framework/reference/overview.html)
+- [Spring Reference - Core](https://docs.spring.io/spring-framework/reference/core.html) - IoC container chapters
