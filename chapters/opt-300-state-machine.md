@@ -4,7 +4,7 @@ Goal: Perform migration of a database table by adding a new column and create a 
 
 Required Reading:
 
-- [Spring State Machine](https://docs.spring.io/spring-statemachine/docs/3.2.1/reference/#statemachine)
+- [Spring State Machine](https://docs.spring.io/spring-statemachine/docs/current/reference/)
 - [Spring State Machine Guide](https://www.baeldung.com/spring-state-machine)
 - [Spring State Machine Example](https://stackoverflow.com/questions/35911877/how-to-use-spring-state-machine-for-an-order-object)
 

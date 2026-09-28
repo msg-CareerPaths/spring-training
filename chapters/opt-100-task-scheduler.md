@@ -15,4 +15,4 @@ Online Shop:
 Further Resources:
 
 - [Spring Scheduled Tasks](https://www.baeldung.com/spring-scheduled-tasks)
-- [Scheduling Reference Documentation](https://docs.spring.io/spring/docs/5.1.6.RELEASE/spring-framework-reference/integration.html#scheduling)
+- [Scheduling Reference Documentation](https://docs.spring.io/spring-framework/reference/integration/scheduling.html)

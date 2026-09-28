@@ -4,7 +4,7 @@ Goal: Add support for a custom data format (CSV) for response bodies.
 
 Required Reading:
 
-- [Customizing Response Rendering](https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/html/howto-spring-mvc.html#howto-customize-the-responsebody-rendering)
+- [Customizing Response Rendering](https://docs.spring.io/spring-boot/how-to/spring-mvc.html#howto.spring-mvc.customize-responsebody-rendering)
 - [CSV with Jackson](http://www.cowtowncoder.com/blog/archives/2012/03/entry_468.html)
 
 Online Shop:

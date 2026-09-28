@@ -15,4 +15,4 @@ Online Shop:
 Further Resources:
 
 - [Intro to WebSockets with Spring](https://www.baeldung.com/websockets-spring)
-- [Spring WebSocket Reference](https://docs.spring.io/spring/docs/5.1.6.RELEASE/spring-framework-reference/web.html#websocket)
+- [Spring WebSocket Reference](https://docs.spring.io/spring-framework/reference/web/websocket.html)

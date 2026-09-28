@@ -13,4 +13,4 @@ Online Shop:
 Further Resources:
 
 - [Accessing Relational Data using JDBC with Spring](https://spring.io/guides/gs/relational-data-access/)
-- [Spring Data Access with JDBC Reference](https://docs.spring.io/spring/docs/5.1.6.RELEASE/spring-framework-reference/data-access.html#jdbc)
+- [Spring Data Access with JDBC Reference](https://docs.spring.io/spring-framework/reference/data-access/jdbc.html)

@@ -14,4 +14,4 @@ Online Shop:
 
 Further Resources:
 
-- [Spring MongoDB Reference](https://docs.spring.io/spring-data/mongodb/docs/2.1.6.RELEASE/reference/html/)
+- [Spring MongoDB Reference](https://docs.spring.io/spring-data/mongodb/reference/)
