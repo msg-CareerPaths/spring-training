@@ -41,7 +41,7 @@ Online Shop:
 >
 >       CANCELED --> [*]: Final state
 >
->       class SAVED, PLACED, CANCELED blueState
+>       class SAVED,PLACED,CANCELED blueState
 >   ```
 > 
 > - Create also a handler class (use @WithStateMachine and @OnTransition annotations) in which you add your custom logic for every transition (status changes and call to the corresponding order service method).
