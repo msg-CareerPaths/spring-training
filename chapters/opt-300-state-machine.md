@@ -12,7 +12,7 @@ Online Shop:
 
 > - Add a new property for an order:
 >
->   - status -> represents the status of the order
+>   - status → represents the status of the order
 >             
 >               NEW -> every order which is not saved yet
 >               SAVED -> saved but editable (add/remove products, change delivery address etc.)
@@ -24,7 +24,25 @@ Online Shop:
 >
 > - Create a StateMachineConfig class in which you will define the following order statuses transitions:
 >
->   ![State Machine](https://raw.githubusercontent.com/msg-CareerPaths/spring-training/master/diagrams/state-machine.png "State Machine")
+>   ```mermaid
+>   stateDiagram-v2
+>       classDef blueState fill:#82d1f5,stroke:#333,stroke-width:1px,color:#000
+>
+>       [*] --> NEW: (Initial state)
+>
+>       NEW --> SAVED: Save
+>       NEW --> PLACED: Place
+>
+>       SAVED --> PLACED: Place
+>       SAVED --> CANCELED: Cancel
+>
+>       PLACED --> CANCELED: Cancel
+>       PLACED --> [*]: Final state
+>
+>       CANCELED --> [*]: Final state
+>
+>       class SAVED, PLACED, CANCELED blueState
+>   ```
 > 
 > - Create also a handler class (use @WithStateMachine and @OnTransition annotations) in which you add your custom logic for every transition (status changes and call to the corresponding order service method).
 > 

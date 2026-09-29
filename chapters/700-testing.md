@@ -6,6 +6,7 @@ Required Reading:
 
 - [Spring Boot Testing](https://www.baeldung.com/spring-boot-testing)
 - [Unit Testing with Spring Boot](https://reflectoring.io/unit-testing-spring-boot/)
+- [Getting started with Testcontainers](https://testcontainers.com/guides/testing-spring-boot-rest-api-using-testcontainers/)
 - [Testcontainers](https://youtu.be/erp-7MCK5BU)
 
 Online Shop:
@@ -35,7 +36,6 @@ Online Shop:
 
 Further Resources:
 
-- [Self-Contained Testing Using TestContainer with PostgreSQL](https://www.baeldung.com/spring-boot-testcontainers-integration-test)
 - [Test Pyramid](https://martinfowler.com/bliki/TestPyramid.html)
 - [Spring Boot Testing Reference](https://docs.spring.io/spring-boot/reference/testing/index.html#testing)
 - [Postman Scripts Reference](https://learning.getpostman.com/docs/postman/scripts/intro_to_scripts)
