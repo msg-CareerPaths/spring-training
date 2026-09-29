@@ -5,7 +5,7 @@ Goal: Send confirmation emails to customers when orders are created.
 Required Reading:
 
 - [Guide to Spring Mail](https://www.baeldung.com/spring-email)
-- [Spring Expression Language](https://docs.spring.io/spring/docs/current/spring-framework-reference/core.html#expressions)
+- [Spring Expression Language](https://docs.spring.io/spring-framework/reference/core/expressions.html)
 
 Online Shop:
 
@@ -18,4 +18,4 @@ Online Shop:
 Further Resources:
 
 - [Sending Emails with Java](https://www.baeldung.com/java-email)
-- [Spring Email Reference](https://docs.spring.io/spring/docs/5.1.6.RELEASE/spring-framework-reference/integration.html#mail)
+- [Spring Email Reference](https://docs.spring.io/spring-framework/reference/integration/email.html)

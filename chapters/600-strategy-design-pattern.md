@@ -12,8 +12,8 @@ Online Shop:
 
 > Enhance the Service for Order Creation implemented in the previous chapter in the following way: 
 > - The service has to select a strategy for finding from which locations should the products be taken. The strategy should be selected based on a `@Configuration`. The following initial strategies should be created:
->   - **Single Location**  - the method implemented in the previous chapter.
->   - **Most abundant** - take each product from the location which has the largest stock for that particular product.
+>   - **Single Location**: the method implemented in the previous chapter.
+>   - **Most abundant**: take each product from the location which has the largest stock for that particular product.
 > - The service then runs the strategy, obtaining a list of objects with the following structure: location, product, quantity (= how many items of the given product are taken from the given location). If the strategy is unable to find a suitable set of locations, it should throw an exception.
 
 Further Resources:

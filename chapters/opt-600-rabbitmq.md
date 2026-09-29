@@ -13,5 +13,5 @@ Online Shop:
 
 Further Resources:
 
-- [Spring AMQP Reference](https://docs.spring.io/spring-amqp/docs/2.1.5.RELEASE/reference/)
+- [Spring AMQP Reference](https://docs.spring.io/spring-amqp/reference/)
 - [An Introduction to Message Brokers](https://medium.com/@xaviergeerinck/an-introduction-to-message-brokers-9bd203b4ebbd)

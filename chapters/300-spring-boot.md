@@ -19,7 +19,7 @@ Online Shop:
 > Extract the generated `zip` file into the previously cloned repository. Import this project into your IDE. You can delete the `mvnw`, `mvnw.cmd` and `.mvn` files / folders as you have Maven in the IDE anyway.
 
 Further Resources:
-- [Spring Boot Reference](https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/html/index.html) - Parts I and II
+- [Spring Boot Reference](https://docs.spring.io/spring-boot/reference/index.html) - Developing with Spring Boot and Core Features
 - [Spring Boot Tomcat Sample](https://github.com/oktadev/okta-spring-boot-tomcat-example)
-- [Common Application Properties](https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/html/common-application-properties.html)
+- [Common Application Properties](https://docs.spring.io/spring-boot/appendix/application-properties/index.html)
 - [Introduction to SLF4J](https://www.baeldung.com/slf4j-with-log4j2-logback)

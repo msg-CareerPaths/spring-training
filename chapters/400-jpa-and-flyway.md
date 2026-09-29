@@ -5,9 +5,9 @@ Goal: Initialize the database schema and map the tables to Java classes using JP
 Required Reading:
 
 - [Database migration using Flyway + Spring Boot + Hibernate + SQL](https://www.youtube.com/watch?v=7uKynYx1eK0)
-- [Database initialization](https://docs.spring.io/spring-boot/docs/3.3.0-M2/reference/html/howto.html#howto.data-initialization)
+- [Database initialization](https://docs.spring.io/spring-boot/how-to/data-initialization.html)
 - [Jakarta Persistence (JPA)](https://jakarta.ee/learn/docs/jakartaee-tutorial/current/persist/persistence-intro/persistence-intro.html)
-- [JPA - JPQL](https://docs.jboss.org/hibernate/orm/6.4/userguide/html_single/Hibernate_User_Guide.html)
+- [Hibernate ORM User Guide](https://docs.hibernate.org/stable/orm/userguide/html_single/#architecture) - Architecture and Domain Model
 - [Introduction to Spring Data JPA](https://www.baeldung.com/the-persistence-layer-with-spring-data-jpa)
 - [Spring Boot Application with Flyway and PostgreSQL](https://blog.jetbrains.com/idea/2024/11/how-to-use-flyway-for-database-migrations-in-spring-boot-applications/)
 

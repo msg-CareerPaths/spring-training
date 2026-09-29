@@ -4,14 +4,15 @@ Goal: Secure your application with HTTP Basic Authentication and Form Based Auth
 
 Required Reading:
 
-- [Spring Security Hello World Guide](https://docs.spring.io/spring-security/site/docs/5.1.5.RELEASE/guides/html5/helloworld-boot.html)
+- [Spring Security Hello World Guide](https://docs.spring.io/spring-security/reference/servlet/getting-started.html)
 - [Spring Security Basic Authentication](https://www.baeldung.com/spring-security-basic-authentication)
+- [Spring Security Form Login](https://docs.spring.io/spring-security/reference/servlet/authentication/passwords/form.html)
 
 Online Shop:
 
 > Implement a custom `UserDetailsService` which retrieves usernames and passwords from your database.
 >
-> Build two Spring configurations for securing your application: one with HTTP Basic and one with Form based login. These configurations should be active based on a Spring profile (e.g. `with-basic` and `with-form`) or based on a property such that only one of them is active at a time.
+> Build two Spring configurations for securing your application: one with HTTP Basic and one with Form-based login. These configurations should be active based on a Spring profile (e.g. `with-basic` and `with-form`) or based on a property such that only one of them is active at a time.
 >
 > Adjust your Postman Tests to also handle authentication.
 
