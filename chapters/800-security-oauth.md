@@ -15,20 +15,7 @@ Online Shop:
 
 > Configure your application using OAuth 2.0 to access the endpoints securely. Users of the application must be authenticated to access any information. 
 > You will configure the application as both Authorization Server (which issues Jwt tokens) and Resource Server (which requires a valid token to authenticate a request). 
-> ```mermaid
-> sequenceDiagram
->     participant FE as Frontend App
->     box Backend REST API (Spring Boot)
->         participant Filter as Bearer Token Authentication Filter
->         participant Auth as Auth Controller (/login)
->         participant User as User Controller (/user)
->     end
->     FE->>Auth: POST /login (content-type application/x-www-form-urlencoded, username=xxxx&password=xxxx)
->     Auth-->>FE: { idToken: xxx.yyy.zzz }
->     FE->>Filter: GET /user (Authorization: Bearer xxx.yyy.zzz)
->     Filter->>User: forward
->     User-->>FE: { id: 1, name "John Doe", email "johndoe@gmail.com", ... }
-> ```
+> ![Security flow](https://raw.githubusercontent.com/msg-CareerPaths/spring-training/master/diagrams/security.png "Security flow")
 > 
 > Create a **JwtUtil** class which will handle the creation and the validation of the tokens. 
 > This class will have a method to generate a Jwt token from an Authentication object (which contains the credentials of the customer). Note: you can use the Open Source JJWT library (https://github.com/jwtk/jjwt).
